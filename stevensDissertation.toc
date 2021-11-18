@@ -1,0 +1,12 @@
+\contentsline {chapter}{Abstract}{iii}{Doc-Start}%
+\contentsline {chapter}{Dedication}{iv}{Doc-Start}%
+\contentsline {chapter}{Acknowledgments}{v}{Doc-Start}%
+\contentsline {chapter}{List of Tables}{vii}{chapter*.1}%
+\contentsline {chapter}{List of Figures}{viii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Method Description}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The DOI Variance Reduction Method}{2}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Approximation Method based on DOI method}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.3}JDOI method}{3}{section.2.3}%
+\contentsline {chapter}{\numberline {A}Appendix A Title}{1}{appendix.A}%
+\contentsline {chapter}{Bibliography}{2}{appendix.A}%
