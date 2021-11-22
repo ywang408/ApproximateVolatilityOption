@@ -11,7 +11,7 @@ Consider a multi-factor model, in which a $d$-dimensional vector of state variab
     dX(t) = \mu(t, X(t)) dt + \sigma(t, X(t)) dW(t)
 \end{equation}
 
-\noindent where $\mu(t,X(t))$ and $\sigma(t, X(t))$ are drift and diffusion functions under the risk-neutral measure $\mathbb Q$, which also satisfies appropriate growth and Lipschiz conditions such that equation(\ref{general model}) admits a unique strong solution and is Markovian; $W(t)$ is a $d$-dimensional standard Brownian Motion and $t \in [0,T]$.
+\noindent where $\mu(t,X(t))$ and $\sigma(t, X(t))$ are drift and diffusion functions under the risk-neutral measure $\mathbb Q$, which also satisfies appropriate growth and Lipschitz conditions such that equation(\ref{general model}) admits a unique strong solution and is Markovian; $W(t)$ is a $d$-dimensional standard Brownian Motion and $t \in [0,T]$.
 
 % Besides, we also need to consider the stopping time formulation such that we can apply DOI method to path-dependent options, we shall discuss it later in section \ref{sec: 2.3} when pricing American options.
 
@@ -70,7 +70,7 @@ Denote the price difference $\Delta w(t,x) = w(t,x) - \bar{w}(t,x)$, by subtract
     \item The discrepancies between the auxiliary model and general model.
 \end{itemize}
 
-\noindent Define $\delta(t,x) = (\mathcal{L}-\bar{\mathcal{L}}) w(t,x)$, $d(t,x) = G(t,x) - \bar{G}(t,x)$, under standard regularity conditions\footnote{See Appendix A in \cite{kristensen_adding_2011}}, we can derive the following formula by using Feynman-Kac representation
+\noindent Define $\delta(t,x) = (\mathcal{L}-\bar{\mathcal{L}}) w(t,x)$, $d(t,x) = G(t,x) - \bar{G}(t,x)$, under standard regularity conditions\footnote{See Appendix A in \cite{kristensen_adding_2011}}, we can derive the following formula by using the Feynman-Kac representation. 
 
 \begin{equation}\label{feynman-kac rep}
     \begin{gathered}
@@ -109,7 +109,7 @@ Finally, under the initial condition $Z_0 = w(0,x)$, the DOI estimator
 
 
 
-\section{Approximation Method based on DOI method}
+\section{Approximation Method based on the DOI method}
 \label{sec: 2.2}
 
 Recall equation\eqref{feynman-kac rep}, instead of using it as an estimator to do simulations, \cite{kristensen_adding_2011} make some additional assumptions and use Ito-Taylor expansion to get closed form approximation formula.

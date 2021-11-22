@@ -1,11 +1,11 @@
-\chapter{Approximations on VIX options}
+\chapter{Approximations of VIX options}
 
 % In this section, we use the methods illustrated before to price options under several volatility models. In section \ref{sec: 3.1}, we approximate option prices with 1-dimensional volatility processes; In section \ref{sec: 3.2}, method is given to price options under double CEV model. In section \ref{sec: 3.3}, while pricing path-dependent options like American options, we use the DOI estimator and shows that it's able reduce simulations' variance.
 
 \section{Approximating options under mean-reverting CEV model}
 \label{sec: 3.1}
 
-\subsection{Drawbacks of using Black-Scholes model as auxiliary model}
+\subsection{Drawbacks of using Black-Scholes model as an auxiliary model}
 \cite{chan_empirical_1992} proposes the mean-reversion CEV model, in which volatility follows
 
 $$
@@ -113,10 +113,10 @@ $$
 
 Finally we get a closed form approximating formula for call options under mean-reverting CEV model. But notice that the call price \eqref{aux call price} contains non-square chi square distribution functions, applying infinitesimal generator $\mathcal{L}$ on it can be a hard point and in the next section we are going to talk about how to derive partial derivatives of distribution function $Q(\cdot | \nu+i, \lambda)$.
 
-\subsection{Derivatives of noncentral chi-square distribution function}
+\subsection{Derivatives of non-central chi-square distribution function}
 \label{sec: 3.2}
 
-In this section, methods\footnote{Methods are inspired by \cite{hossain_comparison_2019}, who use to calculate greeks of options under CEV model} are given to calculate the derivatives of call option price $\bar{w}$ to time $t$ and volatility index $V$. We have already discussed in \ref{sec: 3.2} the call option prices $\bar{w}$ under square root mean-reverting model, where
+In this section, methods\footnote{Methods are inspired by \cite{hossain_comparison_2019}, who use to calculate the Greeks of options under CEV model} are given to calculate the derivatives of call option price $\bar{w}$ to time $t$ and volatility index $V$. We have already discussed in \ref{sec: 3.2} the call option prices $\bar{w}$ under square root mean-reverting model, where
 
 \begin{equation}\label{cev param}
     \begin{aligned}
@@ -141,7 +141,7 @@ Based on equation\eqref{cev param}, we can calculate partial derivatives of $x$ 
     \end{aligned}
 \end{equation}
 
-Besides, using the relationship between the complementary cumulative distribution function(ccdf) $Q(\cdot | \nu+i, \lambda)$, cumulative distribution function(cdf) $F(\cdot | \nu+i, \lambda)$ and probability density function(pdf) we can derive
+Besides, using the relationship between the complementary cumulative distribution function(ccdf) $Q(\cdot | \nu+i, \lambda)$, the cumulative distribution function(cdf) $F(\cdot | \nu+i, \lambda)$ and the probability density function(pdf) we can derive
 
 \begin{equation}\label{q dx}
     \begin{aligned}
@@ -190,7 +190,7 @@ Thus we can calculate delta of call option
         \end{aligned}
 \end{equation}
 
-Next we calculate the partial derivatives of pdf $p(x; \nu, \lambda)$ to $V$ and $t$ in order to calculate gamma and apply infinitesimal generator on the mis-pricing formula. \cite{cohen_noncentral_1988} proposes the recurrence relations for $p$, it's also been used in \cite{hossain_comparison_2019} to calculate greeks of options under CEV models, which is given by
+Next we calculate the partial derivatives of pdf $p(x; \nu, \lambda)$ to $V$ and $t$ in order to calculate gamma and apply infinitesimal generator on the mis-pricing formula. \cite{cohen_noncentral_1988} proposes the recurrence relations for $p$, it's also been used in \cite{hossain_comparison_2019} to calculate the Greeks of options under CEV models, which is given by
 
 \begin{equation}
     \begin{gathered}
@@ -231,9 +231,9 @@ The gamma of call option under square root mean-reverting model is then
     \end{aligned}
 \end{equation}
 
-From \eqref{mispricing} we know that $\delta = \frac{1}{2} \sigma^2 (V^{2\gamma}-V) \Gamma_{\bar{w}}$, all terms have been solved from above. Once we choose a proper algorithm to calculate ccdf and cdf for noncentral chi square distribution,  we can use approximating formula \ref{cev approx formula} to calculate option prices for all mean-reverting CEV model explicitly. The expansions in approximating formula can be computed once for all, we can solve it manually or use symbolic language.
+From \eqref{mispricing} we know that $\delta = \frac{1}{2} \sigma^2 (V^{2\gamma}-V) \Gamma_{\bar{w}}$, all terms have been solved from above. Once we choose a proper algorithm to calculate ccdf and cdf for non-central chi-square distribution,  we can use approximating formula \ref{cev approx formula} to calculate option prices for all mean-reverting CEV model explicitly. The expansions in approximating formula can be computed once for all, we can solve it manually or use symbolic language.
 
-\section{Approximating options under double heston model}
+\section{Approximating options under double Heston model}
 
 \cite{gatheral_consistent_nodate} proposes volatility with double mean-reverting dynamics
 
