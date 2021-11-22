@@ -25,20 +25,20 @@ Consider a multi-factor model, in which a $d$-dimensional vector of state variab
 %     V(t,x) = \mathbb{E}^{t,x}[e^{-\int_t^T R(s,X(s)) ds} G(T, X(T))]
 % \end{equation}
 
-Let $V(t,x)$ be the value function of European option written on $X(T)$ with current state $X(t)=x$, $G(t, x)$ be the payoff function. We define the infinitesimal generator $\mathcal{L}$ associated with equation(\ref{general model})to be
+Let $w(t,x)$ be the value function of European option written on $X(T)$ with current state $X(t)=x$, $G(t, x)$ be the payoff function. We define the infinitesimal generator $\mathcal{L}$ associated with equation(\ref{general model})to be
 
 \begin{equation}\label{general inf gen}
     \begin{aligned}
-        (\mathcal{L} V)(t, x)&=\frac{\partial V}{\partial t} + \sum_{i=1}^{d} \mu_i(t, x) \frac{\partial V}{\partial x}+\frac{1}{2} \sum_{i=1}^{d}\sum_{j=1}^{d} (\sigma(t,x) \sigma^{\intercal}(t,x))_{i,j} \frac{\partial^2 V}{\partial x_i x_k}
+        \mathcal{L} w(t, x)&=\frac{\partial w}{\partial t} + \sum_{i=1}^{d} \mu_i(t, x) \frac{\partial w}{\partial x}+\frac{1}{2} \sum_{i=1}^{d}\sum_{j=1}^{d} (\sigma(t,x) \sigma^{\intercal}(t,x))_{i,j} \frac{\partial^2 w}{\partial x_i x_k}
     \end{aligned}
 \end{equation}
 
 Let $R(t,x)$ be the instantaneous short-term interest rate, combining with equation(\ref{general model}) and equation(\ref{general inf gen}), the price of European option $V$ is a solution to the following partial differential equation(PDE)
 
 \begin{equation}\label{pde under general}
-    \mathcal{L}V(x,t) = R(x,t)V(x,t)
+    \mathcal{L}w(x,t) = R(x,t)w(x,t)
 \end{equation}
-\noindent with boundary condition $V(T,x(T)) = G(T,X(T))$. It's easily seen that under risk neutral measure $\mathbb Q$, the instantaneous option price change is equal to the price gain in saving account. 
+\noindent with boundary condition $w(T,x(T)) = G(T,X(T))$. It's easily seen that under risk neutral measure $\mathbb Q$, the instantaneous option price change is equal to the price gain in saving account. 
 
 Next we consider to use a $m$-dimensional($m \leq d$) process $\bar{X}(t)$ which is a simpler auxiliary model to approximate the price of option. $\bar{X}(t)$ satisfies the following SDE
 
@@ -51,41 +51,39 @@ Next we consider to use a $m$-dimensional($m \leq d$) process $\bar{X}(t)$ which
 
 \noindent where $\bar{\mu}(t, \bar{X}(t))$ and $\bar{\sigma}(t, \bar{X}(t))$ are drift and diffusion functions, and they are also assumed to satisfy appropriate conditions such that equation(\ref{approx model}) admits a unique strong solution and is Markovian.
 
-Let $\bar{V}(t,x)$ be the option price written on process $\bar{X}(t)$ and assume $\bar{V}$ has closed form solution under this new process, the infinitesimal generator $\bar{\mathcal{L}}$ for option price $\bar{V}$ is the same as equation(\ref{general inf gen}) but replacing $\mu(t,x)$, $\sigma(t,x)$ by $\bar{\mu}(t,x)$ and $\bar{\sigma}(t,x)$. Therefore $\bar{V}(t,x)$ is a solution to
+Let $\bar{w}(t,x)$ be the option price written on process $\bar{X}(t)$ and assume $\bar{w}$ has closed form solution under this new process, the infinitesimal generator $\bar{\mathcal{L}}$ for option price $\bar{w}$ is the same as equation(\ref{general inf gen}) but replacing $\mu(t,x)$, $\sigma(t,x)$ by $\bar{\mu}(t,x)$ and $\bar{\sigma}(t,x)$. Therefore $\bar{w}(t,x)$ is a solution to
 
 \begin{equation}\label{pde under approx}
-    \mathcal{\bar{L}}\bar{V}(x,t) = R(x,t)\bar{V}(x,t)
+    \mathcal{\bar{L}}\bar{w}(x,t) = R(x,t)\bar{w}(x,t)
 \end{equation}
 
-
-
-Denote the price difference $\Delta V(t,x) = V(t,x) - \bar{V}(t,x)$, by subtract equation(\ref{pde under approx} from equation(\ref{pde under general})), $\Delta V(t,x)$ satisfies the following equation
+Denote the price difference $\Delta w(t,x) = w(t,x) - \bar{w}(t,x)$, by subtract equation(\ref{pde under approx} from equation(\ref{pde under general})), $\Delta w(t,x)$ satisfies the following equation
 
 \begin{equation}
-    \mathcal{L} \Delta V(t, x)+ (\mathcal{L}-\bar{\mathcal{L}}) V(t,x)=R(x, t) \Delta V(t, x)
+    \mathcal{L} \Delta w(t, x)+ (\mathcal{L}-\bar{\mathcal{L}}) w(t,x)=R(x, t) \Delta w(t, x)
 \end{equation}
 
-\noindent with boundary condition $\Delta V(T,x) = G(T,x) - \bar{G}(T,x)$. We can find that the price difference arises from two parts:
+\noindent with boundary condition $\Delta w(T,x) = G(T,x) - \bar{G}(T,x)$. We can find that the price difference arises from two parts:
 
 \begin{itemize}
     \item The use of a wrong payoff function $\bar{G}(t,x)$, it can be eliminated once we use the same payoff function in auxiliary model as it in general model
     \item The discrepancies between the auxiliary model and general model.
 \end{itemize}
 
-\noindent Define $\delta(t,x) = (\mathcal{L}-\bar{\mathcal{L}}) V(t,x)$, $d(t,x) = G(t,x) - \bar{G}(t,x)$, under standard regularity conditions\footnote{See Appendix A in \cite{kristensen_adding_2011}}, we can derive the following formula by using Feynman-Kac representation
+\noindent Define $\delta(t,x) = (\mathcal{L}-\bar{\mathcal{L}}) w(t,x)$, $d(t,x) = G(t,x) - \bar{G}(t,x)$, under standard regularity conditions\footnote{See Appendix A in \cite{kristensen_adding_2011}}, we can derive the following formula by using Feynman-Kac representation
 
 \begin{equation}\label{feynman-kac rep}
     \begin{gathered}
-        V(t, x)=\bar{V}(t,x)+\mathbb{E}_{t,x}\left[\exp \left(-\int_{t}^{T} R(s,X(s)) d s\right) d(T,X(T))\right] \\
+        w(t, x)=\bar{w}(t,x)+\mathbb{E}_{t,x}\left[\exp \left(-\int_{t}^{T} R(s,X(s)) d s\right) d(T,X(T))\right] \\
         \quad+\int_{t}^{T} \mathbb{E}_{t,x}\left[\exp \left(-\int_{t}^{s} R(u, X(u)) d u\right) \delta(s,X(s))\right] d s
         \end{gathered}
 \end{equation}
 
-Finally, under the initial condition $Z_0 = V(0,x)$, the DOI estimator
+Finally, under the initial condition $Z_0 = w(0,x)$, the DOI estimator
 
 \begin{equation}
     \begin{gathered}
-        Z_t =\bar{V}(t, x)+\exp \left(-\int_{t}^{T} R(s,X(s)) d s\right) d(T,X(T)) \\
+        Z_t =\bar{w}(t, x)+\exp \left(-\int_{t}^{T} R(s,X(s)) d s\right) d(T,X(T)) \\
         \quad+\int_{t}^{T} \exp \left(-\int_{t}^{s} R(x(u), u) d u\right) \delta(s,X(s))d s
         \end{gathered}
 \end{equation}
@@ -156,10 +154,11 @@ Assume closed form solution of option price $\bar{V}$ under auxiliary model and 
 
 Note that the terms in equation(\eqref{approx formula}) can be calculated once for all, meaning that it be computed much faster than simulation methods using estimator.
 
-\section{JDOI method}
-\label{sec: 2.3}
-  
-\normalsize 
+% \section{JDOI method}
+% \label{sec: 2.3}
+
+% \cite{auster_jdoi_2021} extends theoretical concept of DOI method to the pricing of American options under (time-homogeneous) Levy stochastic differential equations and gives a more comprehensive method on pricing American options. Here we talk about the method to price American options.
+% \normalsize 
 
 % \begin{figure}[htp]
 % \centering

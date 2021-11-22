@@ -7,44 +7,52 @@ A level-1 auxiliary file: chapter3.aux
 A level-1 auxiliary file: appendixA.aux
 The style file: chicago.bst
 Database file #1: ref.bib
-You've used 1 entry,
+Warning--no number and no volume in auster_jdoi_2021
+Warning--page numbers missing in auster_jdoi_2021
+Warning--no journal in gatheral_consistent_nodate
+Warning--no number and no volume in gatheral_consistent_nodate
+Warning--empty year in heath_monte_nodate
+Warning--no journal in heath_monte_nodate
+Warning--no number and no volume in heath_monte_nodate
+You've used 8 entries,
             2861 wiz_defined-function locations,
-            623 strings with 5149 characters,
-and the built_in function-call counts, 761 in all, are:
-= -- 68
-> -- 52
-< -- 0
-+ -- 16
-- -- 20
-* -- 69
-:= -- 139
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 7
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 18
-empty$ -- 45
-format.name$ -- 24
-if$ -- 138
+            667 strings with 6349 characters,
+and the built_in function-call counts, 5618 in all, are:
+= -- 476
+> -- 408
+< -- 2
++ -- 126
+- -- 140
+* -- 514
+:= -- 1015
+add.period$ -- 25
+call.type$ -- 8
+change.case$ -- 58
+chr.to.int$ -- 8
+cite$ -- 15
+duplicate$ -- 148
+empty$ -- 329
+format.name$ -- 164
+if$ -- 1041
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 10
-pop$ -- 4
+missing$ -- 8
+newline$ -- 44
+num.names$ -- 80
+pop$ -- 45
 preamble$ -- 1
-purify$ -- 13
+purify$ -- 106
 quote$ -- 0
-skip$ -- 23
+skip$ -- 156
 stack$ -- 0
-substring$ -- 45
-swap$ -- 6
-text.length$ -- 0
+substring$ -- 292
+swap$ -- 53
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 20
-warning$ -- 0
-while$ -- 12
+type$ -- 160
+warning$ -- 7
+while$ -- 79
 width$ -- 0
-write$ -- 15
+write$ -- 107
+(There were 7 warnings)

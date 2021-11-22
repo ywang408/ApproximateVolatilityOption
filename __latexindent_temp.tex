@@ -1,0 +1,48 @@
+\chapter{Applications on VIX options}
+
+In this section, we use the methods illustrated before to price options under several volatility models. In section \ref{sec: 3.1}, we approximate option prices with 1-dimensional volatility processes; In section \ref{sec: 3.2}, method is given to price options under double CEV model. In section \ref{sec: 3.3}, while pricing path-dependent options like American options, we use the DOI estimator and shows that it's able reduce simulations' variance.
+
+\section{Approximating options under 1-dimensional volatility models}
+\label{sec: 3.1}
+
+It's known that all the 1-$d$ volatility models can be nested within the following model
+
+\begin{equation}
+    d V(t)=\left(c_{1}+\frac{c_{2}}{V(t)}+c_{3} V(t) \ln V(t)+c_{4} V+c_{5} V^{2}(t)\right) d t+k V^{\gamma}(t) dW(t)
+\end{equation}
+
+\noindent The restrictions are shown in the table \ref{tabe 3.1}
+
+\begin{table}
+    \begin{center}
+        \begin{tabular}{|m{1cm}|l|}
+            \hline 1 & $d V=\left(\frac{c_{2}}{V}+c_{4} V\right) d t+(k) d Z$ \\
+            \hline 2 & $d V=\left(c_{1}+c_{4} V\right) d t+(k V) d Z$ \\
+            \hline 3 & $d V=\left(c_{1}+c_{4} V\right) d t+\left(k V^{0.5}\right) d Z$ \\
+            \hline 4 & $d V=\left(c_{4} V\right) d t+(k V) d Z$ \\
+            \hline 5 & $d V=\left(c_{1}+c_{4} V\right) d t+(k) d Z$ \\
+            \hline 6 & $d V=\left(c_{3} V \ln V+c_{4} V\right) d t+(k V) d Z$ \\
+            \hline 7 & $d V=\left(c_{4} V+c_{5} V^{2}\right) d t+\left(k V^{1.5}\right) d Z$ \\
+            \hline 8 & $d V=\left(c_{1}+c_{4} V\right) d t+\left(k V^{1.5}\right) d Z$ \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \caption{Vol models}
+    \label{tabe 3.1}
+\end{table}
+
+\subsection{Option pricing under MR model}
+
+First we consider a simple model that volatility follows a mean-reverting square root process
+
+\begin{equation}
+    d V(t)=(\alpha-\kappa V(t)) d t+\sigma \sqrt{V(t)} d W(t)
+\end{equation}
+
+\noindent A natural way to approximate option prices under this model is to use a Black-Scholes model as auxiliary model.
+
+\section{Option pricing under double CEV model}
+\label{sec: 3.2}
+
+\section{Pricing American option under double CEV model}
+\label{sec: 3.3}

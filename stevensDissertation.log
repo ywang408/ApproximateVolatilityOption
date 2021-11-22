@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.27)  18 NOV 2021 09:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.27)  22 NOV 2021 11:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -719,15 +719,41 @@ Chapter 1.
 
  (./chapter2.tex
 Chapter 2.
+
+LaTeX Warning: Reference `sec: 2.3' on page 2 undefined on input line 3.
+
 [2
 
 
 
 
-] [3]) [4]
+] [3] [4] [5]) [6]
 \openout2 = `chapter3.aux'.
 
- (./chapter3.tex)
+ (./chapter3.tex
+Chapter 3.
+[7
+
+
+
+
+]
+<./figures/call2T.png, id=226, 642.4pt x 481.8pt>
+File: ./figures/call2T.png Graphic file (type png)
+<use ./figures/call2T.png>
+Package pdftex.def Info: ./figures/call2T.png  used on input line 41.
+(pdftex.def)             Requested size: 284.52756pt x 213.39682pt.
+<./figures/call2V.png, id=227, 642.4pt x 481.8pt>
+File: ./figures/call2V.png Graphic file (type png)
+<use ./figures/call2V.png>
+Package pdftex.def Info: ./figures/call2V.png  used on input line 47.
+(pdftex.def)             Requested size: 284.52756pt x 213.39682pt.
+ [8 <./figures/call2T.png (PNG copy)>] [9 <./figures/call2V.png (PNG copy)>] [10] [11]
+Overfull \hbox (0.86775pt too wide) in paragraph at lines 172--173
+[]\OT1/cmr/m/n/12 Similarly com-bin-ing equa-tion[], [], [] we can get par-tial deriva-
+ []
+
+[12] [13] [14]) [15]
 \openout2 = `appendixA.aux'.
 
  (./appendixA.tex
@@ -741,9 +767,6 @@ l.439 \include{appendixA}
 
 
 
-
-
-
 ] (./stevensDissertation.bbl)pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -753,22 +776,25 @@ l.470 \end{document}
 
 
 ] (./stevensDissertation.aux (./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./appendixA.aux))
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `stevensDissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 1548BBDEBDAE8FE323708A248CF78B83;1627.
+(rerunfilecheck)             Checksum: 6D3544EABCEBD2A02C922902BE3D4B69;3450.
  ) 
 Here is how much of TeX's memory you used:
- 22457 strings out of 478994
- 402771 string characters out of 5858183
- 691437 words of memory out of 5000000
- 39436 multiletter control sequences out of 15000+600000
- 410680 words of font info for 55 fonts, out of 8000000 for 9000
+ 22598 strings out of 478994
+ 405058 string characters out of 5858183
+ 697709 words of memory out of 5000000
+ 39517 multiletter control sequences out of 15000+600000
+ 412697 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,15n,88p,674b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on stevensDissertation.pdf (14 pages, 158497 bytes).
+ 87i,15n,88p,768b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on stevensDissertation.pdf (25 pages, 272910 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 183 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 109 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 402 PDF objects out of 1000 (max. 8388607)
+ 353 compressed objects within 4 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 
