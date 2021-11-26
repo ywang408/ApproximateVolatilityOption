@@ -214,51 +214,53 @@ Next we calculate the partial derivatives of pdf $p(x; \nu, \lambda)$ to $V$ and
     \end{gathered}
 \end{equation}
 
-\noindent It is shown that the partial derivative of pdf $p(x; \nu, \lambda)$ to degrees of freedom $\lambda$ is a combination of original pdf $p(x; \nu, \lambda)$ and 2 degrees higher pdf $p(x; \nu+2, \lambda)$; The partial derivative of pdf $p(x; \nu, \lambda)$ to $x$ is a combination of original pdf $p(x; \nu, \lambda)$ but 2 degrees lower pdf $p(x; \nu+2, \lambda)$. By using the transformation of \eqref{h2l}
+% \noindent It is shown that the partial derivative of pdf $p(x; \nu, \lambda)$ to degrees of freedom $\lambda$ is a combination of original pdf $p(x; \nu, \lambda)$ and 2 degrees higher pdf $p(x; \nu+2, \lambda)$; The partial derivative of pdf $p(x; \nu, \lambda)$ to $x$ is a combination of original pdf $p(x; \nu, \lambda)$ but 2 degrees lower pdf $p(x; \nu+2, \lambda)$. By using the transformation of \eqref{h2l}
+
+% \begin{equation}\label{l2h}
+%     p(xK ; \nu-2, \lambda)=\frac{\lambda}{xK} p(xK ; \nu+2, \lambda)+\frac{v-2}{xK} p(xK ; \nu, \lambda)
+% \end{equation}
+
+% \noindent We can rewrite \eqref{pdf1} to
+
+\noindent Combining it with equation\eqref{params dv}, \eqref{params dt} gives
+
+\begin{equation}\label{pdf diff}
+    \begin{aligned}
+        \frac{\partial p}{\partial t}&= \frac{\partial p}{\partial (xK)}\frac{\partial (xK)}{\partial t} + \frac{\partial p}{\partial \lambda} \frac{\partial \lambda}{\partial t} \\
+        &= \frac{-\kappa x e^{-\kappa T}}{2(1 - e^{-\kappa T})} \left[Vp(xK ; v+2, \lambda) - (K+V) p(xK ; v, \lambda) + K p(xK ; v-2, \lambda)\right]\\
+        \frac{\partial p}{\partial V} &= \frac{\partial p}{\partial (xK)}\frac{\partial (xK)}{\partial V} + \frac{\partial p}{\partial \lambda} \frac{\partial \lambda}{\partial V} \\
+        &= \frac{x e^{-\kappa T}}{2} [-p(xK ; v, \lambda)+p(xK ; v+2, \lambda)]
+    \end{aligned}
+\end{equation}
+
+\noindent Besides, by using the transformation of \eqref{h2l}
 
 \begin{equation}\label{l2h}
     p(xK ; \nu-2, \lambda)=\frac{\lambda}{xK} p(xK ; \nu+2, \lambda)+\frac{v-2}{xK} p(xK ; \nu, \lambda)
 \end{equation}
 
-\noindent We can rewrite \eqref{pdf1} to
+\noindent $p(xK;\nu-2,\lambda)$ in \eqref{pdf diff} can be substituted by
 
 \begin{equation}\label{pdf2}
-    \frac{\partial p(x;\nu,\lambda)}{\partial x}=\frac{1}{2}[-p(x ; v, \lambda)+p(x ; v-2, \lambda)]
-\end{equation}
-
-% \noindent For pdf with different degrees of freedom but other parameters are the same, their relation is given by
-
-% $$
-% p(x ; v-2, \lambda)=\frac{\lambda}{x} p(x ; v+2, \lambda)+\frac{v-2}{x} p(x ; v, \lambda)
-% $$
-
-Combining it with equation\eqref{params dv}, \eqref{params dt} gives
-
-\begin{equation}
     \begin{aligned}
-        \frac{\partial p}{\partial t}&= \frac{\partial p}{\partial x}\frac{\partial x}{\partial t} + \frac{\partial p}{\partial \lambda} \frac{\partial \lambda}{\partial t} \\
-        &= \frac{\kappa x }{2[1 - \exp(- \kappa T)]} [ - \exp(- \kappa T) p(x, \nu-2, \lambda)\\
-        &+ (\exp(- \kappa T)+V) p(x ; \nu, \lambda) - Vp(x, \nu+2, \lambda)]\\
-        \frac{\partial p}{\partial V} &= \frac{\partial p}{\partial x}\frac{\partial x}{\partial V} + \frac{\partial p}{\partial \lambda} \frac{\partial \lambda}{\partial V} \\
-        &= \frac{x \exp(-\kappa T)}{2}[p(x ; v, \lambda)-p(x ; v+2, \lambda)]
+        \frac{\partial p(xK;\nu,\lambda)}{\partial (xK)}&=\frac{1}{2}[-p(xK ; v, \lambda)+p(xK ; v-2, \lambda)]\\
+        &=\frac{1}{2}\left[(\frac{v-2}{xK}-1) p(xK ; \nu, \lambda) + \frac{\lambda}{xK} p(xK ; \nu+2, \lambda))\right]
     \end{aligned}
 \end{equation}
 
-The gamma of call option under square root mean-reverting model is then
+Thus gamma of call option under square root mean-reverting model is then
 
 \begin{equation}\label{gamma}
     \begin{aligned}
         \begin{aligned}
-            \Gamma_{\bar{w}}= & \frac{\partial Q}{\partial V} \\
-            =& \frac{x D(T) \exp(-2\kappa T)}{2} [
-            xV \exp (-\kappa T) (p(xK; \nu+6, \lambda) - p(xK,\nu+8,\lambda)) \\
-            &+m (1-\exp (-\kappa T)) (p(xK; \nu+4, \lambda)-p(xK,\nu+6,\lambda)) \\
-            &+ xK (p(x K; \nu+2, \lambda)-p(xK,\nu+4,\lambda))]
+            \Gamma_{\bar{w}}&= \frac{\partial \Delta_{\bar{w}}}{\partial V} \\
+            &= \frac{xe^{-(2\kappa +r )T}}{2} [mx(1-e^{-\kappa T})(p(xK ; \nu+4, \lambda)-p(xK+6 ; \nu, \lambda)) \\
+            &+ \nu p(xK+6 ; \nu, \lambda) - (\nu+2)p(xK+4 ; \nu, \lambda)]
             \end{aligned}
     \end{aligned}
 \end{equation}
 
-From \eqref{mispricing} we know that $\delta = \frac{1}{2} \sigma^2 (V^{2\gamma}-V) \Gamma_{\bar{w}}$, all terms have been solved from above. Once we choose a proper algorithm to calculate ccdf and cdf for non-central chi-square distribution,  we can use approximating formula \ref{cev approx formula} to calculate option prices for all mean-reverting CEV model explicitly. The expansions in approximating formula can be computed once for all, we can solve it manually or use symbolic language.
+From \eqref{mispricing} we know that $\delta = \frac{1}{2} \sigma^2 (V^{2\gamma}-V) \Gamma_{\bar{w}}$, all terms have been solved from above. In essence, during expansion, we can solve partial derivatives of cdf $Q(xK;\nu,\lambda)$ and pdf $p(xK;\nu,\lambda)$ explicitly. And for those pdf with degrees out of bounds, we use \eqref{l2h} and \eqref{h2l} to adjust them, making degrees of freedom within our desired range. Finally we can get a closed-form approximation formula for all mean-reverting CEV model. The expansions in approximating formula can be computed once for all, we can solve it manually or use symbolic language.
 
 \section{Approximating options under double Heston model}
 
