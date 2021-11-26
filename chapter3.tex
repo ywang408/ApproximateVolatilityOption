@@ -62,9 +62,9 @@ We are going to use it as our auxiliary model as it captures the mean-reverting 
 
 \begin{equation}\label{aux call price}
     \begin{aligned}
-        \bar{w}=& D(T) \exp (-\kappa T) V Q(x K \mid \nu+4, \lambda) \\
-        &+D(T)(\alpha / \kappa)(1-\exp (-\kappa T)) Q(xK \mid \nu+2, \lambda) \\
-        &-D(T) K Q(x K \mid \nu, \lambda)
+        \bar{w}=&  e^{ -(\kappa+r) T} V Q(x K ; \nu+4, \lambda) \\
+        &+ m e^{-r T}(1-e^{-\kappa T}) Q(xK ; \nu+2, \lambda) \\
+        &-e^{-r T} K Q(x K; \nu, \lambda)
         \end{aligned}
 \end{equation}
 
@@ -72,14 +72,13 @@ We are going to use it as our auxiliary model as it captures the mean-reverting 
 
 $$
 \begin{aligned}
-    &D(T) = \exp(-rT)\\
-    &x=\frac{4 \kappa}{\sigma^{2}(1-\exp (-\kappa T))} \\
+    &x=\frac{4 \kappa}{\sigma^{2}(1-e^{-\kappa T})} \\
     &\nu=\frac{4 \kappa m}{\sigma^{2}}, \\
-    &\lambda=x \exp (-\kappa T) V
+    &\lambda= e^{-\kappa T}x V
     \end{aligned}
 $$
 
-\noindent and $Q(\cdot \mid \nu+i, \lambda)$ is the complementary distribution function for the non-central chi-squared density with $\nu + i$ degrees of freedom and non-centrality parameter $h$.
+\noindent and $Q(xK ; \nu+i, \lambda)$ is the complementary distribution function for the non-central chi-squared density with $\nu + i$ degrees of freedom and non-centrality parameter $\lambda$.
 
 Define the infinitesimal generators $\bar{\mathcal{L}}$ for square root mean-reverting model and $\mathcal{L}$ for mean-reverting CEV model
 
@@ -120,42 +119,42 @@ In this section, methods\footnote{Methods are inspired by \cite{hossain_comparis
 
 \begin{equation}\label{cev param}
     \begin{aligned}
-        &x=\frac{4 \kappa}{\sigma^{2}(1-\exp (-\kappa T))} \\
-        &\lambda=x \exp (-\kappa T) V
+        &x K=\frac{4 \kappa}{\sigma^{2}(1-e^{-\kappa T})} K\\
+        &\lambda=x e^{-\kappa T} V = \frac{4 \kappa e^{-\kappa T}}{\sigma^{2}(1-e^{-\kappa T})} V
         \end{aligned}
 \end{equation}
 
 Based on equation\eqref{cev param}, we can calculate partial derivatives of $x$ and $\lambda$ with regard to $V$ and $t$
 
 \begin{equation}\label{params dv}
-    \begin{aligned}
-        \frac{\partial x}{\partial V}&=0\\
-        \frac{\partial \lambda}{\partial V}&=x \exp (-\kappa T)  \\
-    \end{aligned}
+    \begin{gathered}
+        \frac{\partial (x K)}{\partial V}=0\\
+        \frac{\partial \lambda}{\partial V}=x e^{-\kappa T}  = \frac{4 \kappa e^{-\kappa T}}{\sigma^{2}(1-e^{-\kappa T})}\\
+    \end{gathered}
 \end{equation}
 
 \begin{equation}\label{params dt}
     \begin{aligned}
-        \frac{\partial x}{\partial t}&= \frac{-\kappa x \exp(- \kappa T)}{1 - \exp(- \kappa T)}\\
-        \frac{\partial \lambda}{\partial t}& =\frac{-\kappa x V }{1 - \exp(- \kappa T)}
+        \frac{\partial (x K)}{\partial t}&= \frac{-\kappa e^{-\kappa T}}{1 - e^{-\kappa T}} \cdot  xK\\
+        \frac{\partial \lambda}{\partial t}& =\frac{-\kappa e^{-\kappa T}}{1 - e^{-\kappa T}} \cdot  xV
     \end{aligned}
 \end{equation}
 
-Besides, using the relationship between the complementary cumulative distribution function(ccdf) $Q(\cdot | \nu+i, \lambda)$, the cumulative distribution function(cdf) $F(\cdot | \nu+i, \lambda)$ and the probability density function(pdf) we can derive
+Besides, using the relationship between the complementary cumulative distribution function(ccdf) $Q(xK; \nu+i, \lambda)$, the cumulative distribution function(cdf) $F(xK; \nu+i, \lambda)$ and the probability density function(pdf) $p(xK; \nu+i, \lambda)$ we can derive
 
 \begin{equation}\label{q dx}
     \begin{aligned}
-        \frac{\partial Q(x, \nu, \lambda)}{\partial x}&=\frac{\partial[1-F(x, \nu, \lambda)]}{\partial x} \\ 
-        &=-\frac{\partial F(x, \nu, \lambda)]}{\partial x} \\
-        &=-p(x, \nu, \lambda)
+        \frac{\partial Q(xK; \nu, \lambda)}{\partial x}&=\frac{\partial[1-F(xK; \nu, \lambda)]}{\partial x} \\ 
+        &=-\frac{\partial F(xK; \nu, \lambda)]}{\partial x} \\
+        &=-p(xK; \nu, \lambda)
         \end{aligned}
 \end{equation}
 
 \begin{equation}\label{q dlambda}
     \begin{aligned}
-        \frac{\partial Q(w, \nu, \lambda)}{\partial \lambda}&=\frac{\partial[1-F(w ; v, \lambda)]}{\partial \lambda}\\
-        &=-\frac{\partial F(w ; \nu, \lambda)]}{\partial \lambda} \\
-        &=-p(x ; v+2, \lambda)
+        \frac{\partial Q(xK, \nu, \lambda)}{\partial \lambda}&=\frac{\partial[1-F(xK ; \nu, \lambda)]}{\partial \lambda}\\
+        &=-\frac{\partial F(xK ; \nu, \lambda)]}{\partial \lambda} \\
+        &=-p(xK ; \nu+2, \lambda)
     \end{aligned}
 \end{equation}
 
@@ -163,18 +162,18 @@ Combining equation\eqref{params dt}, \eqref{q dx}, \eqref{q dlambda} to use chai
 
 \begin{equation}\label{q dt}
     \begin{aligned}
-        \frac{\partial Q}{\partial t}&= \frac{\partial Q}{\partial x}\frac{\partial x}{\partial t} + \frac{\partial Q}{\partial \lambda} \frac{\partial \lambda}{\partial t} \\
-        &= p(x, \nu, \lambda) \frac{\kappa x \exp(- \kappa T)}{1 - \exp(- \kappa T)} + p(x ; \nu+2, \lambda) \frac{\kappa x V }{1 - \exp(- \kappa T)} \\
-        &= \frac{\kappa x }{1 - \exp(- \kappa T)} \left(p(x, \nu, \lambda) \exp(- \kappa T) + V p(x ; \nu+2, \lambda)\right)
+        \frac{\partial Q}{\partial t}&= \frac{\partial Q}{\partial (xK)}\frac{\partial (xK)}{\partial t} + \frac{\partial Q}{\partial \lambda} \frac{\partial \lambda}{\partial t} \\
+        &= p(xK; \nu, \lambda) \cdot \frac{\kappa e^{-\kappa T}}{1 - e^{-\kappa T}}\cdot xK + p(x ; \nu+2, \lambda) \cdot\frac{\kappa e^{-\kappa T}}{1 - e^{-\kappa T}}\cdot x V \\
+        &= \frac{\kappa x e^{-\kappa T}}{1 - e^{-\kappa T}} \left( K p(x, \nu, \lambda)  + V p(x ; \nu+2, \lambda)\right)
     \end{aligned}
 \end{equation}
 
-Similarly combining equation\eqref{params dv}, \eqref{q dx}, \eqref{q dlambda} we can get partial derivative of $Q(w, \nu, \lambda)$ to volatility $V$
+\noindent Similarly combining equation\eqref{params dv}, \eqref{q dx}, \eqref{q dlambda} we can get partial derivative of $Q(w, \nu, \lambda)$ to volatility $V$
 
 \begin{equation}\label{q dv}
     \begin{aligned}
         \frac{\partial Q}{\partial V}&= \frac{\partial Q}{\partial x}\frac{\partial x}{\partial V} + \frac{\partial Q}{\partial \lambda} \frac{\partial \lambda}{\partial V} \\
-        &= - x \exp (-\kappa T) p(x ; \nu+2, \lambda)
+        &= - x e^{-\kappa T} p(x ; \nu+2, \lambda)
     \end{aligned}
 \end{equation}
 
@@ -182,21 +181,49 @@ Thus we can calculate delta of call option
 
 \begin{equation}
     \begin{aligned}
-        \Delta_{\bar{w}}= &\frac{\partial Q}{\partial V} \\
-        =& [D(T) \exp (-\kappa T)] [Q(x K; \nu+4, \lambda) \\
-        &+xV \exp (-\kappa T) p(x; \nu+6, \lambda) \\
-        &+m (1-\exp (-\kappa T)) p(xK; \nu+4, \lambda) \\
-        &+ xK p(x K; \nu+2, \lambda)]
+        \Delta_{\bar{w}}&= \frac{\partial \bar{w}}{\partial V} \\
+        &= e^{ -(\kappa+r) T} [Q(x K ; \nu+4, \lambda) - xV e^{-\kappa T} p(xK ; \nu+6, \lambda) \\
+        &- mx (1-e^{-\kappa T}) p(xK ; \nu+4, \lambda) + xK p(xK ; \nu+2, \lambda)]
+        \end{aligned}
+\end{equation}
+
+As is seen that pdf in previous equation are all with 2 higher degrees of freedom. However, pdf with higher degrees of freedom require us to re-calculate pdf; Besides, result of approximating pdf with higher degrees of freedom may be inaccurate. To let degrees of freedom $\lambda$ of pdf bounded in some range, we consider the following relationship proposed by \cite{cohen_noncentral_1988}
+
+\begin{equation}\label{h2l}
+    p(xK ; \nu+2, \lambda)=\frac{xK}{\lambda} p(xK ; \nu-2, \lambda)-\frac{\nu-2}{\lambda} p(xK ; \nu, \lambda)
+\end{equation}
+
+\noindent Using \eqref{h2l} we can rewrite $\Delta_{\bar{w}}$ as
+
+\begin{equation}
+    \begin{aligned}
+        \Delta_{\bar{w}}&= \frac{\partial \bar{w}}{\partial V} \\
+        &= e^{ -(\kappa+r) T} [Q(x K ; \nu+4, \lambda) \\
+        &- xV e^{-\kappa T} (\frac{K}{e^{-\kappa T} V} p(xK ; \nu+2, \lambda)-\frac{\nu+2}{\lambda} p(xK ; \nu+4, \lambda) ) \\
+        &- mx (1-e^{-\kappa T}) p(xK ; \nu+4, \lambda) + xK p(xK ; \nu+2, \lambda)] \\
+        & = e^{ -(\kappa+r) T} [Q(x K ; \nu+4, \lambda) - mx (1-e^{-\kappa T}) p(xK ; \nu+4, \lambda) + (\nu+2 )p(xK ; \nu+4, \lambda)]
         \end{aligned}
 \end{equation}
 
 Next we calculate the partial derivatives of pdf $p(x; \nu, \lambda)$ to $V$ and $t$ in order to calculate gamma and apply infinitesimal generator on the mis-pricing formula. \cite{cohen_noncentral_1988} proposes the recurrence relations for $p$, it's also been used in \cite{hossain_comparison_2019} to calculate the Greeks of options under CEV models, which is given by
 
-\begin{equation}
+\begin{equation}\label{pdf1}
     \begin{gathered}
-        \frac{\partial p}{\partial \lambda}=\frac{1}{2}[-p(x ; v, \lambda)+p(x ; v+2, \lambda)] \\
-        \frac{\partial p}{\partial x}=\frac{1}{2}[-p(x ; v, \lambda)+p(x ; v-2, \lambda)]
+        \frac{\partial p(xK;\nu,\lambda)}{\partial \lambda}=\frac{1}{2}[-p(xK ; v, \lambda)+p(xK ; v+2, \lambda)] \\
+        \frac{\partial p(xK;\nu,\lambda)}{\partial (xK)}=\frac{1}{2}[-p(xK ; v, \lambda)+p(xK ; v-2, \lambda)]
     \end{gathered}
+\end{equation}
+
+\noindent It is shown that the partial derivative of pdf $p(x; \nu, \lambda)$ to degrees of freedom $\lambda$ is a combination of original pdf $p(x; \nu, \lambda)$ and 2 degrees higher pdf $p(x; \nu+2, \lambda)$; The partial derivative of pdf $p(x; \nu, \lambda)$ to $x$ is a combination of original pdf $p(x; \nu, \lambda)$ but 2 degrees lower pdf $p(x; \nu+2, \lambda)$. By using the transformation of \eqref{h2l}
+
+\begin{equation}\label{l2h}
+    p(xK ; \nu-2, \lambda)=\frac{\lambda}{xK} p(xK ; \nu+2, \lambda)+\frac{v-2}{xK} p(xK ; \nu, \lambda)
+\end{equation}
+
+\noindent We can rewrite \eqref{pdf1} to
+
+\begin{equation}\label{pdf2}
+    \frac{\partial p(x;\nu,\lambda)}{\partial x}=\frac{1}{2}[-p(x ; v, \lambda)+p(x ; v-2, \lambda)]
 \end{equation}
 
 % \noindent For pdf with different degrees of freedom but other parameters are the same, their relation is given by
