@@ -158,11 +158,11 @@ Besides, using the relationship between the complementary cumulative distributio
     \end{aligned}
 \end{equation}
 
-Combining equation\eqref{params dt}, \eqref{q dx}, \eqref{q dlambda} to use chain rule we can get partial derivative of $Q(w, \nu, \lambda)$ to time $t$
+Combining equation\eqref{params dt}, \eqref{q dx}, \eqref{q dlambda} to use chain rule we can get partial derivative of $Q(xK; \nu, \lambda)$ to time $t$
 
 \begin{equation}\label{q dt}
     \begin{aligned}
-        \frac{\partial Q}{\partial t}&= \frac{\partial Q}{\partial (xK)}\frac{\partial (xK)}{\partial t} + \frac{\partial Q}{\partial \lambda} \frac{\partial \lambda}{\partial t} \\
+        \frac{\partial Q(xK; \nu, \lambda)}{\partial t}&= \frac{\partial Q}{\partial (xK)}\frac{\partial (xK)}{\partial t} + \frac{\partial Q}{\partial \lambda} \frac{\partial \lambda}{\partial t} \\
         &= p(xK; \nu, \lambda) \cdot \frac{\kappa e^{-\kappa T}}{1 - e^{-\kappa T}}\cdot xK + p(x ; \nu+2, \lambda) \cdot\frac{\kappa e^{-\kappa T}}{1 - e^{-\kappa T}}\cdot x V \\
         &= \frac{\kappa x e^{-\kappa T}}{1 - e^{-\kappa T}} \left( K p(x, \nu, \lambda)  + V p(x ; \nu+2, \lambda)\right)
     \end{aligned}
@@ -172,7 +172,7 @@ Combining equation\eqref{params dt}, \eqref{q dx}, \eqref{q dlambda} to use chai
 
 \begin{equation}\label{q dv}
     \begin{aligned}
-        \frac{\partial Q}{\partial V}&= \frac{\partial Q}{\partial x}\frac{\partial x}{\partial V} + \frac{\partial Q}{\partial \lambda} \frac{\partial \lambda}{\partial V} \\
+        \frac{\partial Q(xK; \nu, \lambda)}{\partial V}&= \frac{\partial Q}{\partial x}\frac{\partial x}{\partial V} + \frac{\partial Q}{\partial \lambda} \frac{\partial \lambda}{\partial V} \\
         &= - x e^{-\kappa T} p(x ; \nu+2, \lambda)
     \end{aligned}
 \end{equation}
@@ -226,7 +226,7 @@ Next we calculate the partial derivatives of pdf $p(x; \nu, \lambda)$ to $V$ and
 
 \begin{equation}\label{pdf diff}
     \begin{aligned}
-        \frac{\partial p}{\partial t}&= \frac{\partial p}{\partial (xK)}\frac{\partial (xK)}{\partial t} + \frac{\partial p}{\partial \lambda} \frac{\partial \lambda}{\partial t} \\
+        \frac{\partial p(xK; \nu, \lambda)}{\partial t}&= \frac{\partial p}{\partial (xK)}\frac{\partial (xK)}{\partial t} + \frac{\partial p}{\partial \lambda} \frac{\partial \lambda}{\partial t} \\
         &= \frac{-\kappa x e^{-\kappa T}}{2(1 - e^{-\kappa T})} \left[Vp(xK ; v+2, \lambda) - (K+V) p(xK ; v, \lambda) + K p(xK ; v-2, \lambda)\right]\\
         \frac{\partial p}{\partial V} &= \frac{\partial p}{\partial (xK)}\frac{\partial (xK)}{\partial V} + \frac{\partial p}{\partial \lambda} \frac{\partial \lambda}{\partial V} \\
         &= \frac{x e^{-\kappa T}}{2} [-p(xK ; v, \lambda)+p(xK ; v+2, \lambda)]
