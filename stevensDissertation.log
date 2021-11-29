@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.27)  26 NOV 2021 22:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.27)  29 NOV 2021 02:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -603,7 +603,7 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count328
 \l__pdf_internal_box=\box67
-) (./stevensDissertation.aux (./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./appendixA.aux))
+) (./stevensDissertation.aux (./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./chapter4.aux) (./appendixA.aux))
 \openout1 = `stevensDissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 217.
@@ -688,23 +688,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--221
 
 [1
 
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] (./stevensDissertation.toc)
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] (./stevensDissertation.toc [5
+
+])
 \tf@toc=\write5
 \openout5 = `stevensDissertation.toc'.
 
- [5
-
-] (./stevensDissertation.lot)
+ [6] (./stevensDissertation.lot)
 \tf@lot=\write6
 \openout6 = `stevensDissertation.lot'.
 
- [6
+ [7
 
 ] (./stevensDissertation.lof)
 \tf@lof=\write7
 \openout7 = `stevensDissertation.lof'.
 
- [7
+ [8
 
 ]
 \openout2 = `chapter1.aux'.
@@ -719,9 +719,6 @@ Chapter 1.
 
  (./chapter2.tex
 Chapter 2.
-
-LaTeX Warning: Reference `sec: 2.3' on page 2 undefined on input line 3.
-
 [2
 
 
@@ -738,27 +735,37 @@ Chapter 3.
 
 
 ]
-<./figures/call2T.png, id=222, 642.4pt x 481.8pt>
+<./figures/call2T.png, id=241, 642.4pt x 481.8pt>
 File: ./figures/call2T.png Graphic file (type png)
 <use ./figures/call2T.png>
 Package pdftex.def Info: ./figures/call2T.png  used on input line 41.
 (pdftex.def)             Requested size: 284.52756pt x 213.39682pt.
-<./figures/call2V.png, id=223, 642.4pt x 481.8pt>
+<./figures/call2V.png, id=242, 642.4pt x 481.8pt>
 File: ./figures/call2V.png Graphic file (type png)
 <use ./figures/call2V.png>
 Package pdftex.def Info: ./figures/call2V.png  used on input line 47.
 (pdftex.def)             Requested size: 284.52756pt x 213.39682pt.
- [8 <./figures/call2T.png (PNG copy)>] [9 <./figures/call2V.png (PNG copy)>] [10] [11] [12]
-Overfull \hbox (15.60066pt too wide) detected at line 206
+ [8 <./figures/call2T.png (PNG copy)>] [9 <./figures/call2V.png (PNG copy)>] [10] [11] [12] [13]
+Overfull \hbox (20.54095pt too wide) detected at line 248
 [][]
  []
 
-[13]
-Overfull \hbox (19.83952pt too wide) detected at line 234
-[][]
+[14] [15]
+Overfull \hbox (0.8713pt too wide) in paragraph at lines 288--289
+[]\OT1/cmr/m/n/12 Define in-finites-i-mal gen-er-a-tor $\OMS/cmsy/m/n/12 L$ \OT1/cmr/m/n/12 for [] and $[]$ for square root mean-reverting
  []
 
-[14] [15]) [16]
+) [16]
+\openout2 = `chapter4.aux'.
+
+ (./chapter4.tex
+Chapter 4.
+) [17
+
+
+
+
+]
 \openout2 = `appendixA.aux'.
 
  (./appendixA.tex
@@ -766,7 +773,7 @@ Appendix A.
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.439 \include{appendixA}
+l.442 \include{appendixA}
                           [1
 
 
@@ -775,31 +782,28 @@ l.439 \include{appendixA}
 ] (./stevensDissertation.bbl)pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.470 \end{document}
+l.473 \end{document}
                      [2
 
 
 
-] (./stevensDissertation.aux (./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./appendixA.aux))
-
-LaTeX Warning: There were undefined references.
-
+] (./stevensDissertation.aux (./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./chapter4.aux) (./appendixA.aux))
 Package rerunfilecheck Info: File `stevensDissertation.out' has not changed.
-(rerunfilecheck)             Checksum: E7F8F7D4B6320AF986D6331448FD7971;3496.
+(rerunfilecheck)             Checksum: 835CD29FDEC7782596A469EFBBF89F63;4107.
  ) 
 Here is how much of TeX's memory you used:
- 22605 strings out of 478994
- 405113 string characters out of 5858183
- 697452 words of memory out of 5000000
- 39520 multiletter control sequences out of 15000+600000
+ 22610 strings out of 478994
+ 405063 string characters out of 5858183
+ 696392 words of memory out of 5000000
+ 39514 multiletter control sequences out of 15000+600000
  412697 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,16n,88p,772b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,14n,88p,786b,414s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on stevensDissertation.pdf (25 pages, 272981 bytes).
+Output written on stevensDissertation.pdf (27 pages, 270353 bytes).
 PDF statistics:
- 413 PDF objects out of 1000 (max. 8388607)
- 364 compressed objects within 4 object streams
- 88 named destinations out of 1000 (max. 500000)
- 159 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 424 PDF objects out of 1000 (max. 8388607)
+ 373 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 183 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,13 +1,5 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\citeauthoryear{Auster, Mathys, and Maeder}{Auster
-  et~al.}{2021}]{auster_jdoi_2021}
-Auster, J., L.~Mathys, and F.~Maeder (2021, May).
-\newblock {JDOI} {Variance} {Reduction} {Method} and the {Pricing} of
-  {American}-{Style} {Options}.
-\newblock {\em arXiv:2104.01365 [q-fin]\/}.
-\newblock arXiv: 2104.01365.
-
 \bibitem[\protect\citeauthoryear{Chan, Karolyi, Longstaff, and Sanders}{Chan
   et~al.}{1992}]{chan_empirical_1992}
 Chan, K.~C., G.~A. Karolyi, F.~A. Longstaff, and A.~B. Sanders (1992, July).
@@ -37,13 +29,6 @@ Heath, D. and E.~Platen.
 \newblock A {Monte} {Carlo} {Method} using {PDE} {Expansions} for a
   {Diversiﬁed} {Equity} {Index} {Model}.
 \newblock pp.\ ~31.
-
-\bibitem[\protect\citeauthoryear{Hossain, Noushin, and Hasan}{Hossain
-  et~al.}{2019}]{hossain_comparison_2019}
-Hossain, A.~S., M.~T. Noushin, and K.~Hasan (2019, July).
-\newblock A {Comparison} of the {Black}-{Scholes} {Option} {Pricing} {Model}
-  and {Its} {Alternatives}.
-\newblock {\em Dhaka University Journal of Science\/}~{\em 67\/}(2), 105--110.
 
 \bibitem[\protect\citeauthoryear{Kristensen and Mele}{Kristensen and
   Mele}{2011}]{kristensen_adding_2011}

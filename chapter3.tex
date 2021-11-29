@@ -71,7 +71,7 @@ We are going to use it as our auxiliary model as it captures the mean-reverting 
 \noindent where
 
 $$
-\begin{aligned}
+\begin{aligned}\label{para}
     &x=\frac{4 \kappa}{\sigma^{2}(1-e^{-\kappa T})} \\
     &\nu=\frac{4 \kappa m}{\sigma^{2}}, \\
     &\lambda= e^{-\kappa T}x V
@@ -110,157 +110,152 @@ $$
         \end{aligned}
 \end{equation}
 
-Finally we get a closed form approximating formula for call options under mean-reverting CEV model. But notice that the call price \eqref{aux call price} contains non-square chi square distribution functions, applying infinitesimal generator $\mathcal{L}$ on it can be a hard point and in the next section we are going to talk about how to derive partial derivatives of distribution function $Q(\cdot | \nu+i, \lambda)$.
+Finally we get a closed form approximating formula for call options under mean-reverting CEV model. But notice that the call price \eqref{aux call price} contains non-square chi square distribution functions, applying infinitesimal generator $\mathcal{L}$ on it can be a hard point and in the next section we are going to talk about how to derive partial derivatives of distribution function $Q(xK; \nu+i, \lambda)$.
 
-\subsection{Derivatives of non-central chi-square distribution function}
-\label{sec: 3.2}
+\subsection{Method to Calculate Derivatives In Expansions}
 
-In this section, methods\footnote{Methods are inspired by \cite{hossain_comparison_2019}, who use to calculate the Greeks of options under CEV model} are given to calculate the derivatives of call option price $\bar{w}$ to time $t$ and volatility index $V$. We have already discussed in \ref{sec: 3.2} the call option prices $\bar{w}$ under square root mean-reverting model, where
+In this section, methods to calculate closed-form partial derivatives of call option price $\bar{w}$ to time $t$ and volatility $V$. Our method is based on the recurrence relation of non-central chi-square distribution proposed by \cite{cohen_noncentral_1988}, which is
 
-\begin{equation}\label{cev param}
-    \begin{aligned}
-        &x K=\frac{4 \kappa}{\sigma^{2}(1-e^{-\kappa T})} K\\
-        &\lambda=x e^{-\kappa T} V = \frac{4 \kappa e^{-\kappa T}}{\sigma^{2}(1-e^{-\kappa T})} V
-        \end{aligned}
-\end{equation}
-
-Based on equation\eqref{cev param}, we can calculate partial derivatives of $x$ and $\lambda$ with regard to $V$ and $t$
-
-\begin{equation}\label{params dv}
+\begin{equation}\label{pdf diff}
     \begin{gathered}
-        \frac{\partial (x K)}{\partial V}=0\\
-        \frac{\partial \lambda}{\partial V}=x e^{-\kappa T}  = \frac{4 \kappa e^{-\kappa T}}{\sigma^{2}(1-e^{-\kappa T})}\\
+        \frac{\partial p(xK;\nu,\lambda)}{\partial (xK)}=\frac{1}{2}[-p(xK ; \nu, \lambda)+p(xK ; \nu-2, \lambda)]\\
+        \frac{\partial p(xK;\nu,\lambda)}{\partial \lambda}=\frac{1}{2}[-p(xK ; \nu, \lambda)+p(xK ; \nu+2, \lambda)] \\
     \end{gathered}
 \end{equation}
 
-\begin{equation}\label{params dt}
+\noindent where $p(xK;\nu,\lambda)$ is the Probability Density Function(PDF) of non-central chi-square distribution. From the relationship between Complementary Cumulative Distribution Function(CCDF) $Q(xK;\nu,\lambda)$, Cumulative Distribution Function(CDF) $F(xK;\nu,\lambda)$, and PDF we know that
+
+\begin{equation}\label{CCDF2x}
+    \begin{aligned}
+        \frac{\partial Q(xK; \nu, \lambda)}{\partial (xK)}&=\frac{\partial[1-F(xK; \nu, \lambda)]}{\partial (xK)} \\ 
+        &=-\frac{\partial F(xK; \nu, \lambda)]}{\partial (xK)}\\
+        &= -p(xK;\nu,\lambda)
+    \end{aligned}
+\end{equation}
+
+\noindent Rewrite the second equation in \eqref{pdf diff}, we get
+
+\begin{equation}\label{pdf trans}
+    \begin{aligned}
+        \frac{\partial p(xK;\nu,\lambda)}{\partial \lambda}&=\frac{1}{2}[-p(xK ; \nu, \lambda)+p(xK ; \nu+2, \lambda)] \\
+        &=-\frac{1}{2}[-p(xK ; \nu+2, \lambda)+p(xK ; \nu, \lambda)]\\
+        &= -\frac{\partial p(xK;\nu+2,\lambda)}{\partial (xK)}
+    \end{aligned}
+\end{equation}
+
+\noindent Integrate both sides of \eqref{pdf trans} with respect to $xK$ and combine with \eqref{CCDF2x}, we can derive the partial derivative of CDF to non-central parameter $\lambda$
+
+\begin{equation}
+    \begin{aligned}
+        \frac{\partial}{\partial \lambda} F(xK;\nu,\lambda)&=-\frac{\partial}{\partial (xK)}F(xK;\nu+2,\lambda) \\
+        &= -p(xK;\nu+2,\lambda)
+    \end{aligned}
+\end{equation}
+
+\noindent Finally we get the partial derivative of CCDF to non-central parameter $\lambda$
+
+\begin{equation}\label{CCDF2lambda}
+    \begin{aligned}
+        \frac{\partial Q(xK; \nu, \lambda)}{\partial \lambda}&=\frac{\partial[1-F(xK; \nu, \lambda)]}{\partial \lambda} \\ 
+        &=-\frac{\partial F(xK; \nu, \lambda)]}{\partial \lambda}\\
+        &= p(xK;\nu+2,\lambda)
+    \end{aligned}
+\end{equation}
+
+Until now we can summarize that the derivatives of CCDF and PDF are all combinations of PDFs with change of degrees of freedom. Without loss of accuracy, we make the degrees of freedom in PDF be consistent with call option solution in \eqref{aux call price}, that is for $p(xK;\nu+i, \lambda)$, we let $i \in [0,4]$. Use the non-central chi-square property by \cite{cohen_noncentral_1988} to do the following transformation
+
+\begin{equation}\label{trans}
+    \begin{aligned}
+        p(xK ; \nu-2, \lambda)&=\frac{\lambda}{xK} p(xK ; \nu+2, \lambda)+\frac{v-2}{xK} p(xK ; \nu, \lambda) \\
+        p(xK ; \nu+6, \lambda)&=\frac{xK}{\lambda} p(xK ; \nu+2, \lambda)-\frac{\nu+2}{\lambda} p(xK ; \nu+4, \lambda)
+    \end{aligned}
+\end{equation}
+
+Next we use the results above to calculate delta and gamma of auxiliary call option price $\bar{w}$. Recall the parameter $xK$, $\nu$ and $\lambda$ in \eqref{para}, where
+
+\begin{equation}
+    \begin{aligned}
+        &x=\frac{4 \kappa}{\sigma^{2}(1-e^{-\kappa T})} \\
+        &\nu=\frac{4 \kappa m}{\sigma^{2}}, \\
+        &\lambda= e^{-\kappa T}x V
+    \end{aligned}
+\end{equation}
+
+\noindent Then we use chain rule calculate the following auxiliary derivatives
+
+\begin{equation}
+    \begin{aligned}
+        \frac{\partial Q(xK; \nu, \lambda)}{\partial V}&= \frac{\partial Q}{\partial x}\frac{\partial x}{\partial V} + \frac{\partial Q}{\partial \lambda} \frac{\partial \lambda}{\partial V} \\
+        &=0 + x e^{-\kappa T} p(x ; \nu+2, \lambda)\\
+        &= x e^{-\kappa T} p(x ; \nu+2, \lambda)
+    \end{aligned}
+\end{equation}
+
+\noindent Thus delta is given by
+
+\begin{equation}
+    \begin{aligned}
+        \bar{w}=&  e^{ -(\kappa+r) T} Q(x K ; \nu+4, \lambda) + e^{ -(\kappa+r) T}V \cdot x e^{-\kappa T} p(x K ; \nu+6, \lambda)\\
+        &+ m e^{-r T}(1-e^{-\kappa T}) \cdot x e^{-\kappa T} p(x ; \nu+2, \lambda) -e^{-r T} K \cdot x e^{-\kappa T} p(x ; \nu+2, \lambda)
+        \end{aligned}
+\end{equation}
+
+\noindent Using \eqref{trans} to substitute $p(xK;\nu+6,\lambda)$ and simplify the equation
+
+\begin{equation}
+    \begin{aligned}
+        \Delta_{\bar{w}}=&  e^{ -(\kappa+r) T} Q(x K ; \nu+4, \lambda) \\
+        &+ e^{ -(\kappa+r) T} \lambda \left[\frac{xK}{\lambda} p(xK ; \nu+2, \lambda)-\frac{\nu+2}{\lambda} p(xK ; \nu+4, \lambda)\right]\\
+        &+ m e^{-r T}(1-e^{-\kappa T}) \cdot \frac{4 \kappa}{\sigma^{2}(1-e^{-\kappa T})} e^{-\kappa T} p(x ; \nu+2, \lambda) -e^{-(r+\kappa) T} K  p(x ; \nu+2, \lambda) \\
+        =& e^{ -(\kappa+r) T} [Q(x K ; \nu+4, \lambda)-2p(x K ; \nu+4, \lambda)] 
+        \end{aligned}
+\end{equation}
+
+\noindent Similarly, we calculate another auxiliary derivative
+
+\begin{equation}
+    \begin{aligned}
+        \frac{\partial p(xK;\nu,\lambda)}{\partial V} &= \frac{\partial p}{\partial (xK)}\frac{\partial (xK)}{\partial V} + \frac{\partial p}{\partial \lambda} \frac{\partial \lambda}{\partial V} \\
+        &= \frac{x e^{-\kappa T}}{2} [-p(xK ; \nu, \lambda)+p(xK ; \nu+2, \lambda)]
+    \end{aligned}
+\end{equation}
+
+\noindent As a result, gamma of $\bar{w}$ is then
+
+\begin{equation}\label{gamma}
+    \begin{aligned}
+        \Gamma_{\bar{w}}&= e^{ -(\kappa+r) T} \left[x e^{-\kappa T} p(x ; \nu+6, \lambda)-2 \cdot \frac{x e^{-\kappa T}}{2} [-p(xK ; \nu, \lambda)+p(xK ; \nu+2, \lambda)]\right] \\
+        &= xe^{ -(2\kappa+r) T}p(xK;nu+4,\lambda)
+    \end{aligned}
+\end{equation}
+
+To apply infinitesimal generator on mis-pricing formula, we still need to calculate partial derivatives of PDF to time $t$. Define the following auxiliary functions
+
+\begin{equation}
     \begin{aligned}
         \frac{\partial (x K)}{\partial t}&= \frac{-\kappa e^{-\kappa T}}{1 - e^{-\kappa T}} \cdot  xK\\
         \frac{\partial \lambda}{\partial t}& =\frac{-\kappa e^{-\kappa T}}{1 - e^{-\kappa T}} \cdot  xV
     \end{aligned}
 \end{equation}
 
-Besides, using the relationship between the complementary cumulative distribution function(ccdf) $Q(xK; \nu+i, \lambda)$, the cumulative distribution function(cdf) $F(xK; \nu+i, \lambda)$ and the probability density function(pdf) $p(xK; \nu+i, \lambda)$ we can derive
-
-\begin{equation}\label{q dx}
-    \begin{aligned}
-        \frac{\partial Q(xK; \nu, \lambda)}{\partial x}&=\frac{\partial[1-F(xK; \nu, \lambda)]}{\partial x} \\ 
-        &=-\frac{\partial F(xK; \nu, \lambda)]}{\partial x} \\
-        &=-p(xK; \nu, \lambda)
-        \end{aligned}
-\end{equation}
-
-\begin{equation}\label{q dlambda}
-    \begin{aligned}
-        \frac{\partial Q(xK, \nu, \lambda)}{\partial \lambda}&=\frac{\partial[1-F(xK ; \nu, \lambda)]}{\partial \lambda}\\
-        &=-\frac{\partial F(xK ; \nu, \lambda)]}{\partial \lambda} \\
-        &=-p(xK ; \nu+2, \lambda)
-    \end{aligned}
-\end{equation}
-
-Combining equation\eqref{params dt}, \eqref{q dx}, \eqref{q dlambda} to use chain rule we can get partial derivative of $Q(xK; \nu, \lambda)$ to time $t$
-
-\begin{equation}\label{q dt}
-    \begin{aligned}
-        \frac{\partial Q(xK; \nu, \lambda)}{\partial t}&= \frac{\partial Q}{\partial (xK)}\frac{\partial (xK)}{\partial t} + \frac{\partial Q}{\partial \lambda} \frac{\partial \lambda}{\partial t} \\
-        &= p(xK; \nu, \lambda) \cdot \frac{\kappa e^{-\kappa T}}{1 - e^{-\kappa T}}\cdot xK + p(x ; \nu+2, \lambda) \cdot\frac{\kappa e^{-\kappa T}}{1 - e^{-\kappa T}}\cdot x V \\
-        &= \frac{\kappa x e^{-\kappa T}}{1 - e^{-\kappa T}} \left( K p(x, \nu, \lambda)  + V p(x ; \nu+2, \lambda)\right)
-    \end{aligned}
-\end{equation}
-
-\noindent Similarly combining equation\eqref{params dv}, \eqref{q dx}, \eqref{q dlambda} we can get partial derivative of $Q(w, \nu, \lambda)$ to volatility $V$
-
-\begin{equation}\label{q dv}
-    \begin{aligned}
-        \frac{\partial Q(xK; \nu, \lambda)}{\partial V}&= \frac{\partial Q}{\partial x}\frac{\partial x}{\partial V} + \frac{\partial Q}{\partial \lambda} \frac{\partial \lambda}{\partial V} \\
-        &= - x e^{-\kappa T} p(x ; \nu+2, \lambda)
-    \end{aligned}
-\end{equation}
-
-Thus we can calculate delta of call option
+\noindent Then partial derivatives of PDF to $t$ is given by
 
 \begin{equation}
-    \begin{aligned}
-        \Delta_{\bar{w}}&= \frac{\partial \bar{w}}{\partial V} \\
-        &= e^{ -(\kappa+r) T} [Q(x K ; \nu+4, \lambda) - xV e^{-\kappa T} p(xK ; \nu+6, \lambda) \\
-        &- mx (1-e^{-\kappa T}) p(xK ; \nu+4, \lambda) + xK p(xK ; \nu+2, \lambda)]
-        \end{aligned}
-\end{equation}
-
-As is seen that pdf in previous equation are all with 2 higher degrees of freedom. However, pdf with higher degrees of freedom require us to re-calculate pdf; Besides, result of approximating pdf with higher degrees of freedom may be inaccurate. To let degrees of freedom $\lambda$ of pdf bounded in some range, we consider the following relationship proposed by \cite{cohen_noncentral_1988}
-
-\begin{equation}\label{h2l}
-    p(xK ; \nu+2, \lambda)=\frac{xK}{\lambda} p(xK ; \nu-2, \lambda)-\frac{\nu-2}{\lambda} p(xK ; \nu, \lambda)
-\end{equation}
-
-\noindent Using \eqref{h2l} we can rewrite $\Delta_{\bar{w}}$ as
-
-\begin{equation}
-    \begin{aligned}
-        \Delta_{\bar{w}}&= \frac{\partial \bar{w}}{\partial V} \\
-        &= e^{ -(\kappa+r) T} [Q(x K ; \nu+4, \lambda) \\
-        &- xV e^{-\kappa T} (\frac{K}{e^{-\kappa T} V} p(xK ; \nu+2, \lambda)-\frac{\nu+2}{\lambda} p(xK ; \nu+4, \lambda) ) \\
-        &- mx (1-e^{-\kappa T}) p(xK ; \nu+4, \lambda) + xK p(xK ; \nu+2, \lambda)] \\
-        & = e^{ -(\kappa+r) T} [Q(x K ; \nu+4, \lambda) - mx (1-e^{-\kappa T}) p(xK ; \nu+4, \lambda) + (\nu+2 )p(xK ; \nu+4, \lambda)]
-        \end{aligned}
-\end{equation}
-
-Next we calculate the partial derivatives of pdf $p(x; \nu, \lambda)$ to $V$ and $t$ in order to calculate gamma and apply infinitesimal generator on the mis-pricing formula. \cite{cohen_noncentral_1988} proposes the recurrence relations for $p$, it's also been used in \cite{hossain_comparison_2019} to calculate the Greeks of options under CEV models, which is given by
-
-\begin{equation}\label{pdf1}
-    \begin{gathered}
-        \frac{\partial p(xK;\nu,\lambda)}{\partial \lambda}=\frac{1}{2}[-p(xK ; v, \lambda)+p(xK ; v+2, \lambda)] \\
-        \frac{\partial p(xK;\nu,\lambda)}{\partial (xK)}=\frac{1}{2}[-p(xK ; v, \lambda)+p(xK ; v-2, \lambda)]
-    \end{gathered}
-\end{equation}
-
-% \noindent It is shown that the partial derivative of pdf $p(x; \nu, \lambda)$ to degrees of freedom $\lambda$ is a combination of original pdf $p(x; \nu, \lambda)$ and 2 degrees higher pdf $p(x; \nu+2, \lambda)$; The partial derivative of pdf $p(x; \nu, \lambda)$ to $x$ is a combination of original pdf $p(x; \nu, \lambda)$ but 2 degrees lower pdf $p(x; \nu+2, \lambda)$. By using the transformation of \eqref{h2l}
-
-% \begin{equation}\label{l2h}
-%     p(xK ; \nu-2, \lambda)=\frac{\lambda}{xK} p(xK ; \nu+2, \lambda)+\frac{v-2}{xK} p(xK ; \nu, \lambda)
-% \end{equation}
-
-% \noindent We can rewrite \eqref{pdf1} to
-
-\noindent Combining it with equation\eqref{params dv}, \eqref{params dt} gives
-
-\begin{equation}\label{pdf diff}
     \begin{aligned}
         \frac{\partial p(xK; \nu, \lambda)}{\partial t}&= \frac{\partial p}{\partial (xK)}\frac{\partial (xK)}{\partial t} + \frac{\partial p}{\partial \lambda} \frac{\partial \lambda}{\partial t} \\
-        &= \frac{-\kappa x e^{-\kappa T}}{2(1 - e^{-\kappa T})} \left[Vp(xK ; v+2, \lambda) - (K+V) p(xK ; v, \lambda) + K p(xK ; v-2, \lambda)\right]\\
-        \frac{\partial p}{\partial V} &= \frac{\partial p}{\partial (xK)}\frac{\partial (xK)}{\partial V} + \frac{\partial p}{\partial \lambda} \frac{\partial \lambda}{\partial V} \\
-        &= \frac{x e^{-\kappa T}}{2} [-p(xK ; v, \lambda)+p(xK ; v+2, \lambda)]
+        &= \frac{-\kappa x e^{-\kappa T}}{2(1 - e^{-\kappa T})} \left[Vp(xK ; \nu+2, \lambda) - (K+V) p(xK ; \nu, \lambda) + K p(xK ; \nu-2, \lambda)\right]\\
     \end{aligned}
 \end{equation}
 
-\noindent Besides, by using the transformation of \eqref{h2l}
+From \eqref{mispricing} we know that the mis-pricing formula $\delta = \frac{1}{2} \sigma^2 (V^{2\gamma}-V) \Gamma_{\bar{w}}$, all terms in which have been solved from above. In essence, to apply Ito-Taylor expansions on $\delta$, we use the following algorithm as used in calculating delta and gamma:
 
-\begin{equation}\label{l2h}
-    p(xK ; \nu-2, \lambda)=\frac{\lambda}{xK} p(xK ; \nu+2, \lambda)+\frac{v-2}{xK} p(xK ; \nu, \lambda)
-\end{equation}
+\begin{enumerate}
+    \item Combining previous auxiliary partial derivatives, use chain rule to apply infinitesimal generator on mis-pricing formula.
+    \item Substitute PDFs with noncentral parameter $\nu+i$ where $\nu \notin [0,4]$.
+    \item Back to step 1, apply higher order infinitesimal generators.
+\end{enumerate}
 
-\noindent $p(xK;\nu-2,\lambda)$ in \eqref{pdf diff} can be substituted by
-
-\begin{equation}\label{pdf2}
-    \begin{aligned}
-        \frac{\partial p(xK;\nu,\lambda)}{\partial (xK)}&=\frac{1}{2}[-p(xK ; v, \lambda)+p(xK ; v-2, \lambda)]\\
-        &=\frac{1}{2}\left[(\frac{v-2}{xK}-1) p(xK ; \nu, \lambda) + \frac{\lambda}{xK} p(xK ; \nu+2, \lambda))\right]
-    \end{aligned}
-\end{equation}
-
-Thus gamma of call option under square root mean-reverting model is then
-
-\begin{equation}\label{gamma}
-    \begin{aligned}
-        \begin{aligned}
-            \Gamma_{\bar{w}}&= \frac{\partial \Delta_{\bar{w}}}{\partial V} \\
-            &= \frac{xe^{-(2\kappa +r )T}}{2} [mx(1-e^{-\kappa T})(p(xK ; \nu+4, \lambda)-p(xK+6 ; \nu, \lambda)) \\
-            &+ \nu p(xK+6 ; \nu, \lambda) - (\nu+2)p(xK+4 ; \nu, \lambda)]
-            \end{aligned}
-    \end{aligned}
-\end{equation}
-
-From \eqref{mispricing} we know that $\delta = \frac{1}{2} \sigma^2 (V^{2\gamma}-V) \Gamma_{\bar{w}}$, all terms have been solved from above. In essence, during expansion, we can solve partial derivatives of cdf $Q(xK;\nu,\lambda)$ and pdf $p(xK;\nu,\lambda)$ explicitly. And for those pdf with degrees out of bounds, we use \eqref{l2h} and \eqref{h2l} to adjust them, making degrees of freedom within our desired range. Finally we can get a closed-form approximation formula for all mean-reverting CEV model. The expansions in approximating formula can be computed once for all, we can solve it manually or use symbolic language.
+Therefore, we illustrate a solution to implement approximation method on volatility options under mean-reverting CEV model. The expansions in approximating formula can be computed once for all, we can solve it manually or use symbolic language for higher orders. All terms in the result is explicit expect non-central chi-square PDFs, we plug $p(xK;\nu+i,\lambda)$ into the result at last.
 
 \section{Approximating options under double Heston model}
 
@@ -281,7 +276,7 @@ $$
     \item And the general Double CEV model.
 \end{itemize}
 
-From our previous work we can price options with $V_t$ following heston dynamics and $V^{\prime}$ following any mean-reverting CEV process, the model is thus
+From our previous work, we can use the same auxiliary model to price options with $V_t$ following heston dynamics and $V^{\prime}_t$ following any mean-reverting CEV process, we call it one Heston one CEV model. This model is given by
 
 \begin{equation}\label{heston cev}
     \begin{aligned}
@@ -290,7 +285,7 @@ From our previous work we can price options with $V_t$ following heston dynamics
     \end{aligned}
 \end{equation}
 
-Define infinitesimal generator $\mathcal{L}$ for \eqref{heston cev} and we still use square root mean-reverting model as our auxiliary model
+Define infinitesimal generator $\mathcal{L}$ for \eqref{heston cev} and $\bar{\mathcal{L}}$ for square root mean-reverting model
 
 \begin{equation}\label{inf gen2}
     \begin{aligned}

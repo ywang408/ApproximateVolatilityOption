@@ -1,6 +1,6 @@
 \chapter{Method Description}
 
-In this section, the origin DOI method, JDOI method and approximation method based on DOI method are described. In section \ref{sec: 2.1},, we introduce the origin DOI method, see\cite{heath_monte_nodate}. In section \ref{sec: 2.2}, we illustrate the approximation method proposed by \cite{kristensen_adding_2011}. In section \ref{sec: 2.3}, we discuss our estimator to price American options based on JDOI method, \cite{auster_jdoi_2021}.
+In this section, the origin DOI method and approximation method based on DOI method are described. In section \ref{sec: 2.1},, we introduce the origin DOI method, see\cite{heath_monte_nodate}. In section \ref{sec: 2.2}, we illustrate the approximation method proposed by \cite{kristensen_adding_2011}. In section \ref{sec: 2.3}, we discuss the selection of nuisance to improve efficiency and accuracy of approximation method.
 
 \section{The DOI Variance Reduction Method}
 \label{sec: 2.1}
@@ -154,9 +154,12 @@ Assume closed form solution of option price $\bar{V}$ under auxiliary model and 
 
 Note that the terms in equation(\eqref{approx formula}) can be calculated once for all, meaning that it be computed much faster than simulation methods using estimator.
 
-% \section{JDOI method}
-% \label{sec: 2.3}
+\section{Nuisance parameter selection}
+\label{sec: 2.3}
 
+As mentioned in \ref{sec: 2.2}, we use an auxiliary model and then expand the mis-pricing term, which leads to a nuisance parameter— a parameter that does not a¤ect the unknown price.
+
+to be added
 % \cite{auster_jdoi_2021} extends theoretical concept of DOI method to the pricing of American options under (time-homogeneous) Levy stochastic differential equations and gives a more comprehensive method on pricing American options. Here we talk about the method to price American options.
 % \normalsize 
 
