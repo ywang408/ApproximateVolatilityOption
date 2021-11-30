@@ -195,7 +195,7 @@ Next we use the results above to calculate delta and gamma of auxiliary call opt
 
 \begin{equation}
     \begin{aligned}
-        \bar{w}=&  e^{ -(\kappa+r) T} Q(x K ; \nu+4, \lambda) + e^{ -(\kappa+r) T}V \cdot x e^{-\kappa T} p(x K ; \nu+6, \lambda)\\
+        \Delta_{\bar{w}}=&  e^{ -(\kappa+r) T} Q(x K ; \nu+4, \lambda) + e^{ -(\kappa+r) T}V \cdot x e^{-\kappa T} p(x K ; \nu+6, \lambda)\\
         &+ m e^{-r T}(1-e^{-\kappa T}) \cdot x e^{-\kappa T} p(x ; \nu+2, \lambda) -e^{-r T} K \cdot x e^{-\kappa T} p(x ; \nu+2, \lambda)
         \end{aligned}
 \end{equation}
@@ -210,6 +210,27 @@ Next we use the results above to calculate delta and gamma of auxiliary call opt
         =& e^{ -(\kappa+r) T} [Q(x K ; \nu+4, \lambda)-2p(x K ; \nu+4, \lambda)] 
         \end{aligned}
 \end{equation}
+
+% \begin{figure}[ht]
+%     \centering
+%     \includegraphics[width=10cm]{./figures/delta_comparison.png}
+%     \caption{delta comparison, computed by our formula and discretisation}\label{delta comparison}
+% \end{figure}
+
+% \begin{figure}[ht]
+%     \centering
+%     \includegraphics[width=10cm]{./figures/delta_diff.png}
+%     \caption{delta differences}\label{delta diff}
+% \end{figure}
+
+\begin{figure}[!tbp]
+    \centering
+    \subfloat[delta comparison]{\includegraphics[width=0.8\textwidth]{./figures/delta_comparison.png}\label{delta comparison}}
+    \hfill
+    \subfloat[delta differences between two methods]{\includegraphics[width=0.8\textwidth]{./figures/delta_diff.png}\label{delta diff}}
+    \caption{Deltas are calculated by our formula, and take call option price differences and divided by vol differences. The parameters used are $T=0.3$,$\alpha = 0.60$, $\beta = 4.00$, $\sigma = 0.133$, $r = 0.05$, and $K= 0.15$.  }
+  \end{figure}
+
 
 \noindent Similarly, we calculate another auxiliary derivative
 

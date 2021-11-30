@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.27)  29 NOV 2021 02:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.27)  30 NOV 2021 05:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -603,7 +603,11 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count328
 \l__pdf_internal_box=\box67
-) (./stevensDissertation.aux (./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./chapter4.aux) (./appendixA.aux))
+) (./stevensDissertation.aux (./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./chapter4.aux
+
+LaTeX Warning: Label `call2t' multiply defined.
+
+) (./appendixA.aux))
 \openout1 = `stevensDissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 217.
@@ -735,37 +739,57 @@ Chapter 3.
 
 
 ]
-<./figures/call2T.png, id=241, 642.4pt x 481.8pt>
+<./figures/call2T.png, id=248, 642.4pt x 481.8pt>
 File: ./figures/call2T.png Graphic file (type png)
 <use ./figures/call2T.png>
 Package pdftex.def Info: ./figures/call2T.png  used on input line 41.
 (pdftex.def)             Requested size: 284.52756pt x 213.39682pt.
-<./figures/call2V.png, id=242, 642.4pt x 481.8pt>
+<./figures/call2V.png, id=249, 642.4pt x 481.8pt>
 File: ./figures/call2V.png Graphic file (type png)
 <use ./figures/call2V.png>
 Package pdftex.def Info: ./figures/call2V.png  used on input line 47.
 (pdftex.def)             Requested size: 284.52756pt x 213.39682pt.
- [8 <./figures/call2T.png (PNG copy)>] [9 <./figures/call2V.png (PNG copy)>] [10] [11] [12] [13]
-Overfull \hbox (20.54095pt too wide) detected at line 248
+ [8 <./figures/call2T.png (PNG copy)>] [9 <./figures/call2V.png (PNG copy)>] [10] [11] [12]
+<./figures/delta_comparison.png, id=307, 642.4pt x 481.8pt>
+File: ./figures/delta_comparison.png Graphic file (type png)
+<use ./figures/delta_comparison.png>
+Package pdftex.def Info: ./figures/delta_comparison.png  used on input line 228.
+(pdftex.def)             Requested size: 346.89731pt x 260.17546pt.
+<./figures/delta_diff.png, id=308, 642.4pt x 481.8pt>
+File: ./figures/delta_diff.png Graphic file (type png)
+<use ./figures/delta_diff.png>
+Package pdftex.def Info: ./figures/delta_diff.png  used on input line 230.
+(pdftex.def)             Requested size: 346.89731pt x 260.17546pt.
+
+
+LaTeX Warning: Float too large for page by 2.55591pt on input line 232.
+
+[13] [14 <./figures/delta_comparison.png (PNG copy)> <./figures/delta_diff.png (PNG copy)>]
+Overfull \hbox (20.54095pt too wide) detected at line 269
 [][]
  []
 
-[14] [15]
-Overfull \hbox (0.8713pt too wide) in paragraph at lines 288--289
+[15] [16]
+Overfull \hbox (0.8713pt too wide) in paragraph at lines 309--310
 []\OT1/cmr/m/n/12 Define in-finites-i-mal gen-er-a-tor $\OMS/cmsy/m/n/12 L$ \OT1/cmr/m/n/12 for [] and $[]$ for square root mean-reverting
  []
 
-) [16]
+) [17]
 \openout2 = `chapter4.aux'.
 
  (./chapter4.tex
 Chapter 4.
-) [17
+<./figures/cev1.png, id=352, 642.4pt x 481.8pt>
+File: ./figures/cev1.png Graphic file (type png)
+<use ./figures/cev1.png>
+Package pdftex.def Info: ./figures/cev1.png  used on input line 26.
+(pdftex.def)             Requested size: 284.52756pt x 213.39682pt.
+) [18
 
 
 
 
-]
+] [19 <./figures/cev1.png (PNG copy)>]
 \openout2 = `appendixA.aux'.
 
  (./appendixA.tex
@@ -788,22 +812,25 @@ l.473 \end{document}
 
 
 ] (./stevensDissertation.aux (./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./chapter4.aux) (./appendixA.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `stevensDissertation.out' has not changed.
 (rerunfilecheck)             Checksum: 835CD29FDEC7782596A469EFBBF89F63;4107.
  ) 
 Here is how much of TeX's memory you used:
- 22610 strings out of 478994
- 405063 string characters out of 5858183
- 696392 words of memory out of 5000000
- 39514 multiletter control sequences out of 15000+600000
+ 22640 strings out of 478994
+ 405721 string characters out of 5858183
+ 698608 words of memory out of 5000000
+ 39535 multiletter control sequences out of 15000+600000
  412697 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,14n,88p,786b,414s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on stevensDissertation.pdf (27 pages, 270353 bytes).
+Output written on stevensDissertation.pdf (29 pages, 328526 bytes).
 PDF statistics:
- 424 PDF objects out of 1000 (max. 8388607)
- 373 compressed objects within 4 object streams
- 92 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 445 PDF objects out of 1000 (max. 8388607)
+ 389 compressed objects within 4 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 

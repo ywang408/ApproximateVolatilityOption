@@ -3,5 +3,9 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Call option price with regard to time to maturity\relax }}{8}{figure.caption.4}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Call option price with regard to volatility\relax }}{9}{figure.caption.5}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Deltas are calculated by our formula, and take call option price differences and divided by vol differences. The parameters used are $T=0.3$,$\alpha = 0.60$, $\beta = 4.00$, $\sigma = 0.133$, $r = 0.05$, and $K= 0.15$. \relax }}{14}{figure.caption.6}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {delta comparison}}}{14}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {delta differences between two methods}}}{14}{subfigure.3.2}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Call option price to volatility\relax }}{19}{figure.caption.7}%
 \addvspace {10\p@ }
