@@ -228,9 +228,17 @@ Next we use the results above to calculate delta and gamma of auxiliary call opt
     \subfloat[delta comparison]{\includegraphics[width=0.8\textwidth]{./figures/delta_comparison.png}\label{delta comparison}}
     \hfill
     \subfloat[delta differences between two methods]{\includegraphics[width=0.8\textwidth]{./figures/delta_diff.png}\label{delta diff}}
-    \caption{Deltas are calculated by our formula, and take call option price differences and divided by vol differences. The parameters used are $T=0.3$,$\alpha = 0.60$, $\beta = 4.00$, $\sigma = 0.133$, $r = 0.05$, and $K= 0.15$.  }
+    \caption{Deltas are calculated by our formula, and finite difference method. The parameters used are $T=0.3$,$\alpha = 0.60$, $\beta = 4.00$, $\sigma = 0.133$, $r = 0.05$, and $K= 0.15$.  }
   \end{figure}
 
+
+  \begin{figure}[!tbp]
+    \centering
+    \subfloat[gamma comparison]{\includegraphics[width=0.8\textwidth]{./figures/gamma_comparison.png}\label{gamma comparison}}
+    \hfill
+    \subfloat[gamma differences between two methods]{\includegraphics[width=0.8\textwidth]{./figures/gamma_diff.png}\label{gamma diff}}
+    \caption{gammas are calculated by our formula, and finite difference method. The parameters used are $T=0.3$,$\alpha = 0.60$, $\beta = 4.00$, $\sigma = 0.133$, $r = 0.05$, and $K= 0.15$.  }
+  \end{figure}
 
 \noindent Similarly, we calculate another auxiliary derivative
 
