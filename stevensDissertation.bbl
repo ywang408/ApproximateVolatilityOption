@@ -12,6 +12,12 @@ Cohen, J.~D. (1988, May).
 \newblock Noncentral {Chi}-{Square}: {Some} {Observations} on {Recurrence}.
 \newblock {\em The American Statistician\/}~{\em 42\/}(2), 120.
 
+\bibitem[\protect\citeauthoryear{David and Eckhard}{David and
+  Eckhard}{}]{david_variance_nodate}
+David, H. and P.~Eckhard.
+\newblock A {Variance} {Reduction} {Technique} based on {Integral}
+  {Representations}.
+
 \bibitem[\protect\citeauthoryear{Gatheral}{Gatheral}{2008}]{gatheral_consistent_nodate}
 Gatheral, J. (2008).
 \newblock Consistent {Modeling} of {SPX} and {VIX} options.
