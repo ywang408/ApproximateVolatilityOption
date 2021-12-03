@@ -11,15 +11,15 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {gamma differences between two methods}}}{15}{subfigure.4.2}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Parameters are $T=0.3,K=0.15, \kappa =4,\theta =0.2, \sigma =0.15, \gamma =0.3$\relax }}{20}{figure.caption.8}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {delta comparison}}}{20}{subfigure.1.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {delta differences between two methods}}}{20}{subfigure.1.2}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison}}}{20}{subfigure.1.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error}}}{20}{subfigure.1.2}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Parameters are $T=0.5,K=0.15, \kappa =4,\theta =0.2, \sigma =0.15, \gamma =0.3$\relax }}{20}{figure.caption.9}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Price comparison}}}{20}{subfigure.2.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Price percentage difference}}}{20}{subfigure.2.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Parameters are $T=0.3,K=0.15, \kappa =4,\theta =0.2, \sigma =0.6, \gamma =0.75$\relax }}{20}{figure.caption.10}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Price comparison}}}{20}{subfigure.3.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Price percentage difference}}}{20}{subfigure.3.2}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison}}}{20}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error}}}{20}{subfigure.2.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Parameters are $T=0.3,K=0.15, \kappa =4,\theta =0.2, \sigma =0.6, \gamma =0.75$\relax }}{21}{figure.caption.10}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison}}}{21}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error}}}{21}{subfigure.3.2}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Parameters are $T=0.5,K=0.15, \kappa =4,\theta =0.2, \sigma =0.6, \gamma =0.75$\relax }}{21}{figure.caption.11}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Price comparison}}}{21}{subfigure.4.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Price percentage difference}}}{21}{subfigure.4.2}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison}}}{21}{subfigure.4.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error}}}{21}{subfigure.4.2}%
 \addvspace {10\p@ }
