@@ -19,4 +19,4 @@
 \contentsline {section}{\numberline {4.2}Volatility option prices under Heston puls CEV model}{22}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}%
 \contentsline {chapter}{\numberline {A}Appendix A Mean-Reverting CEV model Numerical Results}{1}{appendix.A}%
-\contentsline {chapter}{Bibliography}{3}{table.caption.14}%
+\contentsline {chapter}{Bibliography}{3}{table.caption.12}%
