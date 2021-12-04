@@ -15,7 +15,7 @@ For options under mean-reverting CEV model,
 
 \noindent we use the same mean-reverting parameters as \cite{grunbichler_valuing_1996} used in his model, the parameters are $\kappa=4$, $\theta=2$. Besides, we set the nuisance parameter $\sigma_0 = \sigma_{\text{CEV}} V_0^{\gamma-\frac{1}{2}}$, where $V_0=V(t)$, which is the initial value of volatility at time t, see equation \eqref{numerical1}. We test our approximation method with different constant elasticity parameters, the main idea of setting these parameters is that for small $\gamma$, which enlarges the importance of $V$ in the CEV part, we use a small $\sigma$; Whereas for large $\gamma$ we set a large $\sigma$. 
 
-For figure \ref{mrcev res1} and figure, our parameters are $\sigma=0.15$, $\gamma=0.3$, and with different maturities $T=0.3$, $T=0.5$. We can find that in \ref{price comparison1} and \ref{price comparison2} our results with corrective terms $N=3$ are very accurate; Figure \ref{price diff1} and figure \ref{price diff2} show the relative error with different corrective terms. We can find that the results with highest corrective terms outperform other results, which implies that keep applying Ito-Taylor expansions on the mis-pricing formula can create increasingly improved refinements and provide us with more and more accurate results.
+For figure \ref{mrcev res1} and figure \ref{mrcev res2}, our parameters are $\sigma=0.15$, $\gamma=0.3$, and with different maturities $T=0.3$, $T=0.5$. We can find that in \ref{price comparison1} and \ref{price comparison2} our results with corrective terms $N=3$ are very accurate; Figure \ref{price diff1} and figure \ref{price diff2} show the relative error with different corrective terms. We can find that the results with highest corrective terms outperform other results, which implies that keep applying Ito-Taylor expansions on the mis-pricing formula can create increasingly improved refinements and provide us with more and more accurate results.
 
 \begin{figure}[ht]
     \centering
@@ -32,7 +32,6 @@ For figure \ref{mrcev res1} and figure, our parameters are $\sigma=0.15$, $\gamm
   \subfloat[relative error]{\includegraphics[width=0.5\textwidth]{./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv error.png}\label{price diff2}}
   \caption{Parameters are $T=0.5,K=0.15, \kappa=4,\theta=0.2, \sigma=0.15, \gamma=0.3$}
 \end{figure}\label{mrcev res2}
-\centering
 
 Parameters for figure \ref{price comparison3} and figure \ref{price comparison4},our parameters are $\sigma=0.6$, $\gamma=0.75$, and with different maturities $T=0.3$, $T=0.5$. Similarly, our method still provide accurate results.
 
