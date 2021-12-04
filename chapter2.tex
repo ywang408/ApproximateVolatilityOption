@@ -1,113 +1,70 @@
 \chapter{Method Description}\label{ch2}
 
-In this section, the origin DOI method and approximation method based on DOI method are described. In section \ref{sec: 2.1},, we introduce the origin DOI method, see\cite{heath_monte_nodate}. In section \ref{sec: 2.2}, we illustrate the approximation method proposed by \cite{kristensen_adding_2011}. In section \ref{sec: 2.3}, we discuss the selection of nuisance to improve efficiency and accuracy of approximation method.
+In this section, we will discuss HP's DOI method and KM's approximation method. In section \ref{sec: 2.1}, we introduce HP's extension to the approximation of solutions of parabolic PDEs; In section \ref{sec: 2.2}, we illustrate complementary contents for KM's approximation method.
 
 \section{The DOI Variance Reduction Method}
 \label{sec: 2.1}
 
-Consider a multi-factor model, in which a $d$-dimensional vector of state variables $X(t)$ on a filtered probability space$(\Omega,\mathcal F, \mathbb Q)$ satisfies the following Stochastic Differential Equations(SDEs)
+Consider a multi-factor model, in which a $d$-dimensional vector of state variables $X_t$ on a filtered probability space$(\Omega,\mathcal F, \mathbb Q)$ satisfies the following Stochastic Differential Equations(SDEs)
 
 \begin{equation}\label{general model}
-    dX(t) = \mu(t, X(t)) dt + \sigma(t, X(t)) dW(t)
+    dX_t= \mu(t, X_t) dt + \sigma(t, X_t) dW_t
 \end{equation}
 
-\noindent where $\mu(t,X(t))$ and $\sigma(t, X(t))$ are drift and diffusion functions under the risk-neutral measure $\mathbb Q$, which also satisfies appropriate growth and Lipschitz conditions such that equation(\ref{general model}) admits a unique strong solution and is Markovian; $W(t)$ is a $d$-dimensional standard Brownian Motion and $t \in [0,T]$.
+\noindent where $\mu(t,X_t)$ and $\sigma(t, X_t)$ are drift and diffusion functions under the risk-neutral measure $\mathbb Q$. HP imposes $\mu: [0,T] \times \Gamma \rightarrow \mathbb R^d$, $\sigma: [0,T] \times \Gamma \rightarrow \mathbb R^d$, in which $\Gamma$ is assumed to be a bounded subset of $\mathbb R^d$. $\mu$ and $\sigma$ also satisfies appropriate growth and Lipschitz conditions such that equation(\ref{general model}) admits a unique strong solution and is Markovian; $W_t$ is a $d$-dimensional standard Brownian Motion and $t \in [0,T]$.
 
-% Besides, we also need to consider the stopping time formulation such that we can apply DOI method to path-dependent options, we shall discuss it later in section \ref{sec: 2.3} when pricing American options.
-
-% Let $G(t, x)$ be the payoff function of derivatives written on $X(t)$ and current state $X(t) = x$, $t\in[0,T]$, assume $G(t,x)$ satisfies that 
-
-% \begin{equation}
-%     \mathbb{E}_{t, x}\left[\sup _{0 \leq u \leq T-t}\left|e^{-\int_t^{t+u} R(s,X(s)) ds} G(T, X(t+u))\right|\right]<\infty
-% \end{equation}
-
-% \begin{equation}
-%     V(t,x) = \mathbb{E}^{t,x}[e^{-\int_t^T R(s,X(s)) ds} G(T, X(T))]
-% \end{equation}
-
-Let $w(t,x)$ be the value function of European option written on $X(T)$ with current state $X(t)=x$, $G(t, x)$ be the payoff function. We define the infinitesimal generator $\mathcal{L}$ associated with equation(\ref{general model})to be
+Let $w(t,x)$ be the valuation function satisfying $w: [0,T] \times \Gamma$, payoff function $h(t,x)$ satisfying $h: B \rightarrow \mathbb R, B \subseteq \mathbb R^d$. Define the infinitesimal generator $L$ associated with equation \eqref{general model} to be
 
 \begin{equation}\label{general inf gen}
     \begin{aligned}
-        \mathcal{L} w(t, x)&=\frac{\partial w}{\partial t} + \sum_{i=1}^{d} \mu_i(t, x) \frac{\partial w}{\partial x}+\frac{1}{2} \sum_{i=1}^{d}\sum_{j=1}^{d} (\sigma(t,x) \sigma^{\intercal}(t,x))_{i,j} \frac{\partial^2 w}{\partial x_i x_k}
+        L w(t, x)&=\frac{\partial w}{\partial t} + \sum_{i=1}^{d} \mu_i(t, x) \frac{\partial w}{\partial x}+\frac{1}{2} \sum_{i=1}^{d}\sum_{j=1}^{d} (\sigma(t,x) \sigma^{\intercal}(t,x))_{i,j} \frac{\partial^2 w}{\partial x_i x_k}
     \end{aligned}
 \end{equation}
 
-Let $R(t,x)$ be the instantaneous short-term interest rate, combining with equation(\ref{general model}) and equation(\ref{general inf gen}), the price of European option $V$ is a solution to the following partial differential equation(PDE)
+Let $R(t,x)$ be the instantaneous short-term interest rate also satisfying $R: B \rightarrow \mathbb R$, combining with equation \eqref{general model} and equation \eqref{general inf gen}, the task is to find an approximation to the solution to the following partial differential equation(PDE)
 
 \begin{equation}\label{pde under general}
-    \mathcal{L}w(x,t) = R(x,t)w(x,t)
+    Lw(x,t) = R(x,t)w(x,t)
 \end{equation}
-\noindent with boundary condition $w(T,x(T)) = G(T,X(T))$. It's easily seen that under risk neutral measure $\mathbb Q$, the instantaneous option price change is equal to the price gain in saving account. 
+
+\noindent with boundary condition $w(t,x) = h(t,x)$. It's easily seen that under risk neutral measure $\mathbb Q$, the instantaneous option price change is equal to the price gain in saving account. 
 
 Next we consider to use a $m$-dimensional($m \leq d$) process $\bar{X}(t)$ which is a simpler auxiliary model to approximate the price of option. $\bar{X}(t)$ satisfies the following SDE
 
 \begin{equation}\label{approx model}
     \begin{aligned}
-        &d\bar{X}(t)= \begin{cases}   \bar{\mu}_i(t, \bar{X}(t)) dt + \bar{\sigma}_i(t, \bar{X}(t)) dW(t) & 1 \leq i \leq m \\
-        \bar{\mu}_i(t, \bar{X}(t))=0, \ \bar{\sigma}_i(t, \bar{X}(t))=0 & m < i \leq d \end{cases}
+        &d\bar{X}_t= \begin{cases}   \bar{\mu}_i(t, \bar{X}_t) dt + \bar{\sigma}_i(t, \bar{X}_t) dW_t & 1 \leq i \leq m \\
+        0 \cdot dt + 0 \cdot dW_t & m < i \leq d \end{cases}
         \end{aligned}
 \end{equation}
 
-\noindent where $\bar{\mu}(t, \bar{X}(t))$ and $\bar{\sigma}(t, \bar{X}(t))$ are drift and diffusion functions, and they are also assumed to satisfy appropriate conditions such that equation(\ref{approx model}) admits a unique strong solution and is Markovian.
+\noindent where $\bar{\mu}(t, \bar{X}_t)$ and $\bar{\sigma}(t, \bar{X}_t)$ are drift and diffusion functions, and they are also assumed to satisfy appropriate conditions such that equation(\ref{approx model}) admits a unique strong solution and is Markovian. In KM's method, it's automatically satisfied because he supposes there exists closed-from solution to auxiliary model such that he can apply his approximation method.
 
-Let $\bar{w}(t,x)$ be the option price written on process $\bar{X}(t)$ and assume $\bar{w}$ has closed form solution under this new process, the infinitesimal generator $\bar{\mathcal{L}}$ for option price $\bar{w}$ is the same as equation(\ref{general inf gen}) but replacing $\mu(t,x)$, $\sigma(t,x)$ by $\bar{\mu}(t,x)$ and $\bar{\sigma}(t,x)$. Therefore $\bar{w}(t,x)$ is a solution to
+Let $\bar{w}(t,x)$ be the option price written on process $\bar{X}_t$, the infinitesimal generator $\bar{L}$ for option price $\bar{w}$ is the same as equation(\ref{general inf gen}) but replacing $\mu(t,x)$, $\sigma(t,x)$ by $\bar{\mu}(t,x)$ and $\bar{\sigma}(t,x)$. Therefore $\bar{w}(t,x)$ is a solution to
 
 \begin{equation}\label{pde under approx}
     \mathcal{\bar{L}}\bar{w}(x,t) = R(x,t)\bar{w}(x,t)
 \end{equation}
 
-Denote the price difference $\Delta w(t,x) = w(t,x) - \bar{w}(t,x)$, by subtract equation(\ref{pde under approx} from equation(\ref{pde under general})), $\Delta w(t,x)$ satisfies the following equation
+Denote the price difference $\Delta w(t,x) = w(t,x) - \bar{w}(t,x)$, then $\Delta w$ satisfies 
 
 \begin{equation}
-    \mathcal{L} \Delta w(t, x)+ (\mathcal{L}-\bar{\mathcal{L}}) w(t,x)=R(x, t) \Delta w(t, x)
+    L \Delta w(t, x)+ (L-\bar{L}) w(t,x)=R(x, t) \Delta w(t, x)
 \end{equation}
 
-\noindent with boundary condition $\Delta w(T,x) = G(T,x) - \bar{G}(T,x)$. We can find that the price difference arises from two parts:
-
-\begin{itemize}
-    \item The use of a wrong payoff function $\bar{G}(t,x)$, it can be eliminated once we use the same payoff function in auxiliary model as it in general model
-    \item The discrepancies between the auxiliary model and general model.
-\end{itemize}
-
-\noindent Define $\delta(t,x) = (\mathcal{L}-\bar{\mathcal{L}}) w(t,x)$, $d(t,x) = G(t,x) - \bar{G}(t,x)$, under standard regularity conditions\footnote{See Appendix A in \cite{kristensen_adding_2011}}, we can derive the following formula by using the Feynman-Kac representation. 
+\noindent with boundary condition $\Delta w(t,x) = 0$. Define $\delta(t,x) = (L-\bar{L}) \bar{w}(t,x)$, using Feynman-Kac representation leads to the following form
 
 \begin{equation}\label{feynman-kac rep}
-    \begin{gathered}
-        w(t, x)=\bar{w}(t,x)+\mathbb{E}_{t,x}\left[\exp \left(-\int_{t}^{T} R(s,X(s)) d s\right) d(T,X(T))\right] \\
-        \quad+\int_{t}^{T} \mathbb{E}_{t,x}\left[\exp \left(-\int_{t}^{s} R(u, X(u)) d u\right) \delta(s,X(s))\right] d s
-        \end{gathered}
+        w(t, x)=\bar{w}(t,x)+\int_{t}^{T} \mathbb{E}_{t,x}\left[\exp \left(-\int_{t}^{s} R(u, X_u) d u\right) \delta(s,X_s)\right] d s
 \end{equation}
 
-Finally, under the initial condition $Z_0 = w(0,x)$, the DOI estimator
+\noindent Finally, under the initial condition $Z_0 = w(0,x)$, the DOI estimator is then
 
 \begin{equation}
-    \begin{gathered}
-        Z_t =\bar{w}(t, x)+\exp \left(-\int_{t}^{T} R(s,X(s)) d s\right) d(T,X(T)) \\
-        \quad+\int_{t}^{T} \exp \left(-\int_{t}^{s} R(x(u), u) d u\right) \delta(s,X(s))d s
-        \end{gathered}
+        Z_t =\bar{w}(t, x)+\int_{t}^{T} \exp \left(-\int_{t}^{s} R(u, X_u) d u\right) \delta(s,X_s)d s
 \end{equation}
 
-\noindent is an unbiased estimator for $Z_0$. And if a good auxiliary model is chosen,  the variance of $Z_t$ will be small.
-% With this new process, the European option written on $\bar{X}(t)$ is given by
-
-% \begin{equation}
-%     \bar{V} = \mathbb{E}_{t, x}\left[e^{-\int_t^{t+u} R(s,\bar{X}(s)) ds} G(T, \bar{X}(t+u))\right]
-% \end{equation}
-
-% \noindent and assume the following additional integrability condition
-
-% \begin{equation}
-%     \mathbb{E}_{t, x}\left[\sup _{0 \leq u \leq T-t}\left|e^{-\int_t^{t+u} R(s,\bar{X}(s)) ds} G(T, \bar{X}(t+u))\right|\right]<\infty
-% \end{equation}
-
-% Additionally, strong Markovian arguments imply that the European-style option $\bar{V}$ satisfies
-
-% \begin{equation}
-%     L\bar{V}(x,t) + q(t,x) = R(x,t)\bar{V}(x,t)
-% \end{equation}
-
-
+\noindent is an unbiased estimator for $Z_0$. And if a good auxiliary model is chosen, for example, when $\bar{L}$ is close to $L$, the variance of $Z_t$ will be small.
 
 \section{Approximation Method based on the DOI method}
 \label{sec: 2.2}

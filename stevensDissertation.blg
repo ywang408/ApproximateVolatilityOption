@@ -12,48 +12,45 @@ Warning--I didn't find a database entry for "gatheral_consistent_nodate"
 Warning--I didn't find a database entry for "david_variance_nodate"
 Warning--no journal in gatheral_consistent_2008
 Warning--no number and no volume in gatheral_consistent_2008
-Warning--empty year in heath_monte_nodate
-Warning--no journal in heath_monte_nodate
-Warning--no number and no volume in heath_monte_nodate
-You've used 11 entries,
+You've used 10 entries,
             2861 wiz_defined-function locations,
-            686 strings with 6727 characters,
-and the built_in function-call counts, 7533 in all, are:
-= -- 652
-> -- 503
-< -- 2
-+ -- 158
-- -- 182
-* -- 674
-:= -- 1357
-add.period$ -- 33
-call.type$ -- 11
-change.case$ -- 76
-chr.to.int$ -- 11
-cite$ -- 16
-duplicate$ -- 204
-empty$ -- 465
-format.name$ -- 210
-if$ -- 1385
+            683 strings with 6610 characters,
+and the built_in function-call counts, 6824 in all, are:
+= -- 589
+> -- 451
+< -- 1
++ -- 140
+- -- 162
+* -- 623
+:= -- 1231
+add.period$ -- 30
+call.type$ -- 10
+change.case$ -- 69
+chr.to.int$ -- 10
+cite$ -- 12
+duplicate$ -- 183
+empty$ -- 428
+format.name$ -- 186
+if$ -- 1250
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 11
-newline$ -- 58
-num.names$ -- 110
-pop$ -- 55
+missing$ -- 10
+newline$ -- 53
+num.names$ -- 100
+pop$ -- 41
 preamble$ -- 1
-purify$ -- 142
+purify$ -- 129
 quote$ -- 0
-skip$ -- 217
+skip$ -- 197
 stack$ -- 0
-substring$ -- 436
-swap$ -- 72
-text.length$ -- 2
+substring$ -- 410
+swap$ -- 63
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 220
-warning$ -- 5
-while$ -- 120
+type$ -- 200
+warning$ -- 2
+while$ -- 109
 width$ -- 0
-write$ -- 144
-(There were 7 warnings)
+write$ -- 132
+(There were 4 warnings)
