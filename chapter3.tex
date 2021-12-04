@@ -1,4 +1,4 @@
-\chapter{Approximations of VIX options}
+\chapter{Approximations of VIX options}\label{ch3}
 
 % In this section, we use the methods illustrated before to price options under several volatility models. In section \ref{sec: 3.1}, we approximate option prices with 1-dimensional volatility processes; In section \ref{sec: 3.2}, method is given to price options under double CEV model. In section \ref{sec: 3.3}, while pricing path-dependent options like American options, we use the DOI estimator and shows that it's able reduce simulations' variance.
 
@@ -286,7 +286,7 @@ From \eqref{mispricing} we know that the mis-pricing formula $\delta = \frac{1}{
 
 Therefore, we illustrate a solution to implement approximation method on volatility options under mean-reverting CEV model. The expansions in approximating formula can be computed once for all, we can solve it manually or use symbolic language for higher orders. All terms in the result is explicit expect non-central chi-square PDFs, we plug $p(xK;\nu+i,\lambda)$ into the result at last.
 
-\section{Approximating options under double Heston model}
+\section{Approximating options under double Heston model}\label{sec: 3.2}
 
 \cite{gatheral_consistent_nodate} proposes volatility with double mean-reverting dynamics
 

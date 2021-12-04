@@ -1,4 +1,4 @@
-\chapter{Numerical Results}
+\chapter{Numerical Results}\label{ch4}
 
 In this section, we will show our approximation results for mean-reverting CEV model and Heston plus CEV model, expansion of mis-pricing terms is up to $N=3$. We utilize a symbolic library of \footnote{Codes used for this paper can be accessed through my \href{https://github.com/ywang408/master-thesis-code}{github}}{python} \href{https://www.sympy.org/en/index.html}{sympy} to calculate expansions, and use Monte Carlo simulations with 200 steps and 100000 paths as our benchmark because there's no existing pricing formula for these models. We evaluate the accuracy of our results with two kinds of figures, the first kind is the direct comparison between benchmarks and our approximation results, the second one is the relative differences between benchmarks and our results. Besides, we also have attached detailed results in the Appendix \ref{mrcev}.
 
@@ -89,6 +89,6 @@ As is seen in \ref{2d price comparison1}, applying our method under 2-dimensiona
 
 Besides, we notice that for \ref{2d price comparison2} when $\tau=0.5$, our results seem not accurate enough. Though in figure \ref{2d price diff2} relative differences reduce as we apply higher further expansions. We may predict that if applying higher order expansions we could get more precise results. However, this raises a constraint of KM's method, number of terms grow exponentially in the final pricing formula as we keep expanding mis-pricing terms, causing the running time of calculation increasing dramatically, which is a trade-off between applying high order expansions and getting more accurate results. Moreover, if we still don't get a desired result with a threshold expansion order, say $N=5$, we may need to reconsider our auxiliary model and nuisance parameters.
 
-\chapter{Conclusion}
+\chapter{Conclusion}\label{ch5}
 
 In this paper, we introduce approximation method proposed by \cite{david_variance_nodate} and \cite{kristensen_adding_2011}. Based on their work, we extend this method to price options under mean-reverting CEV model and Heston plus CEV models. Selections of auxiliary models and corresponding mis-pricing formula are discussed, we also illustrate techniques to calculate partial derivatives of non-central chi-square distribution functions when using square root mean-reverting as auxiliary model. Finally, we discuss our numerical results and explain the constraints of our method. In all, numerical results show that our method is efficient and accurate.

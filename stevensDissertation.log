@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.27)  3 DEC 2021 19:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.27)  4 DEC 2021 03:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -711,146 +711,153 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--221
 
  (./chapter1.tex
 Chapter 1.
-) [1
+[1
 
 
-]
+]) [2]
 \openout2 = `chapter2.aux'.
 
  (./chapter2.tex
 Chapter 2.
-[2
+[3
 
 
 
 
-] [3] [4] [5]) [6]
+] [4] [5] [6]) [7]
 \openout2 = `chapter3.aux'.
 
  (./chapter3.tex
 Chapter 3.
-[7
+[8
 
 
 
 
 ]
-<./figures/call2T.png, id=269, 642.4pt x 481.8pt>
+<./figures/call2T.png, id=309, 642.4pt x 481.8pt>
 File: ./figures/call2T.png Graphic file (type png)
 <use ./figures/call2T.png>
 Package pdftex.def Info: ./figures/call2T.png  used on input line 41.
 (pdftex.def)             Requested size: 284.52756pt x 213.39682pt.
-<./figures/call2V.png, id=270, 642.4pt x 481.8pt>
+<./figures/call2V.png, id=310, 642.4pt x 481.8pt>
 File: ./figures/call2V.png Graphic file (type png)
 <use ./figures/call2V.png>
 Package pdftex.def Info: ./figures/call2V.png  used on input line 47.
 (pdftex.def)             Requested size: 284.52756pt x 213.39682pt.
- [8 <./figures/call2T.png (PNG copy)>] [9 <./figures/call2V.png (PNG copy)>] [10] [11] [12]
-<./figures/delta_comparison.png, id=328, 642.4pt x 481.8pt>
+ [9 <./figures/call2T.png (PNG copy)>] [10 <./figures/call2V.png (PNG copy)>] [11] [12] [13]
+<./figures/delta_comparison.png, id=366, 642.4pt x 481.8pt>
 File: ./figures/delta_comparison.png Graphic file (type png)
 <use ./figures/delta_comparison.png>
 Package pdftex.def Info: ./figures/delta_comparison.png  used on input line 228.
 (pdftex.def)             Requested size: 346.89731pt x 260.17546pt.
-<./figures/delta_diff.png, id=329, 642.4pt x 481.8pt>
+<./figures/delta_diff.png, id=367, 642.4pt x 481.8pt>
 File: ./figures/delta_diff.png Graphic file (type png)
 <use ./figures/delta_diff.png>
 Package pdftex.def Info: ./figures/delta_diff.png  used on input line 230.
 (pdftex.def)             Requested size: 346.89731pt x 260.17546pt.
-<./figures/gamma_comparison.png, id=330, 642.4pt x 481.8pt>
+<./figures/gamma_comparison.png, id=368, 642.4pt x 481.8pt>
 File: ./figures/gamma_comparison.png Graphic file (type png)
 <use ./figures/gamma_comparison.png>
 Package pdftex.def Info: ./figures/gamma_comparison.png  used on input line 237.
 (pdftex.def)             Requested size: 346.89731pt x 260.17546pt.
-<./figures/gamma_diff.png, id=331, 642.4pt x 481.8pt>
+<./figures/gamma_diff.png, id=369, 642.4pt x 481.8pt>
 File: ./figures/gamma_diff.png Graphic file (type png)
 <use ./figures/gamma_diff.png>
 Package pdftex.def Info: ./figures/gamma_diff.png  used on input line 239.
 (pdftex.def)             Requested size: 346.89731pt x 260.17546pt.
- [13] [14 <./figures/delta_comparison.png (PNG copy)> <./figures/delta_diff.png (PNG copy)>] [15 <./figures/gamma_comparison.png (PNG copy)> <./figures/gamma_diff.png (PNG copy)>]
+ [14] [15 <./figures/delta_comparison.png (PNG copy)> <./figures/delta_diff.png (PNG copy)>] [16 <./figures/gamma_comparison.png (PNG copy)> <./figures/gamma_diff.png (PNG copy)>]
 Overfull \hbox (20.54095pt too wide) detected at line 277
 [][]
  []
 
-[16] [17]
+[17]
+
+Package natbib Warning: Citation `gatheral_consistent_nodate' on page 18 undefined on input line 291.
+
+[18]
 Overfull \hbox (0.8713pt too wide) in paragraph at lines 317--318
 []\OT1/cmr/m/n/12 Define in-finites-i-mal gen-er-a-tor $\OMS/cmsy/m/n/12 L$ \OT1/cmr/m/n/12 for [] and $[]$ for square root mean-reverting
  []
 
-) [18]
+) [19]
 \openout2 = `chapter4.aux'.
 
  (./chapter4.tex
 Chapter 4.
-<./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv price.png, id=386, 433.62pt x 289.08pt>
+<./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv price.png, id=422, 433.62pt x 289.08pt>
 File: ./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv price.png Graphic file (type png)
 <use ./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv price.png>
 Package pdftex.def Info: ./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv price.png  used on input line 20.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv error.png, id=388, 433.62pt x 289.08pt>
+<./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv error.png, id=424, 433.62pt x 289.08pt>
 File: ./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv error.png Graphic file (type png)
 <use ./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv error.png>
 Package pdftex.def Info: ./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv error.png  used on input line 22.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv price.png, id=389, 433.62pt x 289.08pt>
+<./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv price.png, id=425, 433.62pt x 289.08pt>
 File: ./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv price.png Graphic file (type png)
 <use ./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv price.png>
 Package pdftex.def Info: ./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv price.png  used on input line 23.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv error.png, id=390, 433.62pt x 289.08pt>
+<./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv error.png, id=426, 433.62pt x 289.08pt>
 File: ./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv error.png Graphic file (type png)
 <use ./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv error.png>
 Package pdftex.def Info: ./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv error.png  used on input line 25.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-[19
+[20
 
 
 
 
-] [20 <./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv price.png> <./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv error.png> <./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv price.png> <./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv error.png>]
-<./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv price.png, id=416, 433.62pt x 289.08pt>
+] [21 <./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv price.png> <./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv error.png> <./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv price.png> <./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv error.png>]
+<./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv price.png, id=450, 433.62pt x 289.08pt>
 File: ./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv price.png Graphic file (type png)
 <use ./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv price.png>
 Package pdftex.def Info: ./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv price.png  used on input line 37.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv error.png, id=417, 433.62pt x 289.08pt>
+<./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv error.png, id=451, 433.62pt x 289.08pt>
 File: ./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv error.png Graphic file (type png)
 <use ./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv error.png>
 Package pdftex.def Info: ./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv error.png  used on input line 39.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv price.png, id=418, 433.62pt x 289.08pt>
+<./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv price.png, id=452, 433.62pt x 289.08pt>
 File: ./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv price.png Graphic file (type png)
 <use ./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv price.png>
 Package pdftex.def Info: ./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv price.png  used on input line 40.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv error.png, id=419, 433.62pt x 289.08pt>
+<./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv error.png, id=453, 433.62pt x 289.08pt>
 File: ./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv error.png Graphic file (type png)
 <use ./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv error.png>
 Package pdftex.def Info: ./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv error.png  used on input line 42.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
- [21 <./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv price.png> <./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv error.png> <./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv price.png> <./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv error.png>] [22]
-<./figures/heston cev T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv price.png, id=438, 433.62pt x 289.08pt>
+ [22 <./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv price.png> <./figures/T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv error.png> <./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv price.png> <./figures/T=0.5,K=0.15, kappa=4,m=0.2, sigma=0.6, gamma=0.75.csv error.png>] [23]
+<./figures/heston cev T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv price.png, id=473, 433.62pt x 289.08pt>
 File: ./figures/heston cev T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv price.png Graphic file (type png)
 <use ./figures/heston cev T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv price.png>
 Package pdftex.def Info: ./figures/heston cev T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv price.png  used on input line 74.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/heston cev T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv error.png, id=439, 433.62pt x 289.08pt>
+<./figures/heston cev T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv error.png, id=474, 433.62pt x 289.08pt>
 File: ./figures/heston cev T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv error.png Graphic file (type png)
 <use ./figures/heston cev T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv error.png>
 Package pdftex.def Info: ./figures/heston cev T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv error.png  used on input line 76.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/heston cev T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv price.png, id=440, 433.62pt x 289.08pt>
+<./figures/heston cev T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv price.png, id=475, 433.62pt x 289.08pt>
 File: ./figures/heston cev T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv price.png Graphic file (type png)
 <use ./figures/heston cev T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv price.png>
 Package pdftex.def Info: ./figures/heston cev T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv price.png  used on input line 82.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/heston cev T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv error.png, id=441, 433.62pt x 289.08pt>
+<./figures/heston cev T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv error.png, id=476, 433.62pt x 289.08pt>
 File: ./figures/heston cev T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv error.png Graphic file (type png)
 <use ./figures/heston cev T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv error.png>
 Package pdftex.def Info: ./figures/heston cev T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv error.png  used on input line 84.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
- [23 <./figures/heston cev T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv price.png> <./figures/heston cev T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv error.png> <./figures/heston cev T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv price.png> <./figures/heston cev T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv error.png>] [24]
+ [24 <./figures/heston cev T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv price.png> <./figures/heston cev T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv error.png> <./figures/heston cev T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv price.png> <./figures/heston cev T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv error.png>] [25]
 Chapter 5.
-) [25
+
+Package natbib Warning: Citation `david_variance_nodate' on page 26 undefined on input line 94.
+
+) [26
 
 ]
 \openout2 = `appendixA.aux'.
@@ -870,7 +877,11 @@ l.442 \include{appendixA}
 <to be read again> 
                    \relax 
 l.442 \include{appendixA}
-                          [2] (./stevensDissertation.bbl)pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
+                          [2] (./stevensDissertation.bbl)
+
+Package natbib Warning: There were undefined citations.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.473 \end{document}
@@ -883,18 +894,18 @@ Package rerunfilecheck Info: File `stevensDissertation.out' has not changed.
 (rerunfilecheck)             Checksum: 6FF54E69DD672121C509FFBB7A02DB85;4740.
  ) 
 Here is how much of TeX's memory you used:
- 22793 strings out of 478994
- 413498 string characters out of 5858183
- 701205 words of memory out of 5000000
- 39646 multiletter control sequences out of 15000+600000
+ 22816 strings out of 478994
+ 413958 string characters out of 5858183
+ 701615 words of memory out of 5000000
+ 39663 multiletter control sequences out of 15000+600000
  414351 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,14n,88p,1145b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,14n,88p,1576b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on stevensDissertation.pdf (36 pages, 528665 bytes).
+Output written on stevensDissertation.pdf (37 pages, 537093 bytes).
 PDF statistics:
- 567 PDF objects out of 1000 (max. 8388607)
- 477 compressed objects within 5 object streams
- 127 named destinations out of 1000 (max. 500000)
+ 604 PDF objects out of 1000 (max. 8388607)
+ 512 compressed objects within 6 object streams
+ 133 named destinations out of 1000 (max. 500000)
  279 words of extra memory for PDF output out of 10000 (max. 10000000)
 
