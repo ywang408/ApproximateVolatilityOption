@@ -1,6 +1,6 @@
 \chapter{Method Description}\label{ch2}
 
-In this section, we will discuss HP's DOI method and KM's approximation method. In section \ref{sec: 2.1}, we introduce HP's extension to the approximation of solutions of parabolic PDEs; In section \ref{sec: 2.2}, we illustrate complementary contents for KM's approximation method.
+In this section, we will discuss HP's DOI method and KM's approximation method. In section \ref{sec: 2.1}, we introduce HP's DOI method on the approximation of solutions of parabolic PDEs; In section \ref{sec: 2.2}, we illustrate complementary contents for KM's approximation method.
 
 \section{The DOI Variance Reduction Method}
 \label{sec: 2.1}
@@ -38,7 +38,7 @@ Next we consider to use a $m$-dimensional($m \leq d$) process $\bar{X}(t)$ which
         \end{aligned}
 \end{equation}
 
-\noindent where $\bar{\mu}(t, \bar{X}_t)$ and $\bar{\sigma}(t, \bar{X}_t)$ are drift and diffusion functions, and they are also assumed to satisfy appropriate conditions such that equation(\ref{approx model}) admits a unique strong solution and is Markovian. In KM's method, it's automatically satisfied because he supposes there exists closed-from solution to auxiliary model such that he can apply his approximation method.
+\noindent where $\bar{\mu}(t, \bar{X}_t)$ and $\bar{\sigma}(t, \bar{X}_t)$ are drift and diffusion functions, and they are also assumed to satisfy appropriate conditions such that equation(\ref{approx model}) admits a unique strong solution and is Markovian. In KM's method, it's automatically satisfied because he supposes there always exists closed-from solution to auxiliary model such that Ito-Taylor expansions can be applied further.
 
 Let $\bar{w}(t,x)$ be the option price written on process $\bar{X}_t$, the infinitesimal generator $\bar{L}$ for option price $\bar{w}$ is the same as equation(\ref{general inf gen}) but replacing $\mu(t,x)$, $\sigma(t,x)$ by $\bar{\mu}(t,x)$ and $\bar{\sigma}(t,x)$. Therefore $\bar{w}(t,x)$ is a solution to
 
@@ -52,13 +52,22 @@ Denote the price difference $\Delta w(t,x) = w(t,x) - \bar{w}(t,x)$, then $\Delt
     L \Delta w(t, x)+ (L-\bar{L}) w(t,x)=R(x, t) \Delta w(t, x)
 \end{equation}
 
-\noindent with boundary condition $\Delta w(t,x) = 0$. Define $\delta(t,x) = (L-\bar{L}) \bar{w}(t,x)$, using Feynman-Kac representation leads to the following form
+\noindent with boundary condition $\Delta w(t,x) = 0$. Next we define
 
-\begin{equation}\label{feynman-kac rep}
-        w(t, x)=\bar{w}(t,x)+\int_{t}^{T} \mathbb{E}_{t,x}\left[\exp \left(-\int_{t}^{s} R(u, X_u) d u\right) \delta(s,X_s)\right] d s
+\begin{equation}\label{mis-pricing}
+    \begin{aligned}
+        \delta(t,x) &= (L-\bar{L}) \bar{w}(t,x) \\
+        &=\sum_{i=1}^{d} \Delta \mu_{i}(t,x) \frac{\partial \bar{w}(t,x)}{\partial x_{i}}+\frac{1}{2} \sum_{i, j=1}^{d} \Delta \sigma_{i j}^{2}(x, t) \frac{\partial^{2} \bar{w}(x,t)}{\partial x_{i} \partial x_{j}}
+    \end{aligned}
 \end{equation}
 
-\noindent Finally, under the initial condition $Z_0 = w(0,x)$, the DOI estimator is then
+\noindent using Feynman-Kac representation leads to option price $w(t,x)$ taking the following form
+
+\begin{equation}\label{feynman-kac rep}
+        w(t, x)=\bar{w}(t,x)+\int_{t}^{T} \mathbb{E}^{t,x}\left[\exp \left(-\int_{t}^{s} R(u, X_u) d u\right) \delta(s,X_s)\right] d s
+\end{equation}
+
+\noindent Finally, under the initial condition $Z_0 = w(0,x)$, the DOI estimator
 
 \begin{equation}
         Z_t =\bar{w}(t, x)+\int_{t}^{T} \exp \left(-\int_{t}^{s} R(u, X_u) d u\right) \delta(s,X_s)d s
@@ -66,63 +75,68 @@ Denote the price difference $\Delta w(t,x) = w(t,x) - \bar{w}(t,x)$, then $\Delt
 
 \noindent is an unbiased estimator for $Z_0$. And if a good auxiliary model is chosen, for example, when $\bar{L}$ is close to $L$, the variance of $Z_t$ will be small.
 
-\section{Approximation Method based on the DOI method}
+\section{KM's approximation Method based on the DOI method}
 \label{sec: 2.2}
 
-Recall equation\eqref{feynman-kac rep}, instead of using it as an estimator to do simulations, \cite{kristensen_adding_2011} make some additional assumptions and use Ito-Taylor expansion to get closed form approximation formula.
+Recall equation\eqref{feynman-kac rep}, this equation is the \footnote{Except from equation \eqref{mis-pricing}, KM also consider another mispricing function $d(t,x)=h(t,x)-\bar{h}(t,x)$ arising from using a wrong payoff function $\bar{h}(t,x)$, which is useful to apply his method on bond pricing. In this paper we mainly discuss option pricing thus we relax his condition here.}{Theorem 1(Asset Price Representation)} in \cite{kristensen_adding_2011}, KM names equation \eqref{mis-pricing} the mispricing function. His method is to look for an approximation of the error term in order to adjust the price $\bar{w}(t,x)$ for the error due to the use of the auxiliary model to price options.
 
-For sufficiently smooth function $f(t,x), $Ito-Taylor expansion is given by
-
-\begin{equation}
-    \mathbb{E}^{t, x}[f(s, X(s))]=\sum_{N=0}^{J} \frac{(s-t)^{N}}{N !}\left(\mathcal{L}\right)^{N} f(t, x)+\mathcal{R}_{J}
-\end{equation}
-
-\noindent where the remainder term $\mathcal{R}_{J}$ is given by
+We first introduce Ito-Taylor expansion, for sufficiently smooth function $f(t,x)$, it is given by
 
 \begin{equation}
-    \mathcal{R}_{J}=\mathbb{E}^{t, x}\left[\int_{t}^{s} d u_{1} \int_{t}^{u_{1}} d u_{2} \cdots \int_{t}^{u_{J}}\left(\mathcal{L}\right)^{J+1} f\left(u_{J+1}, X\left(u_{J+1}\right)\right) d u_{J+1}\right]
+    \mathbb{E}^{t, x}[f(s, X_s)]=\sum_{N=0}^{J} \frac{(s-t)^{N}}{N !}L^N f(t, x)+\mathcal{R}_{J}
 \end{equation}
 
-The process $X(t)$ here is defined in equation\eqref{general model}, and the infinitesimal generator $\mathcal{L}$ is defined in equation\eqref{general inf gen}.
-
-Assume closed form solution of option price $\bar{V}$ under auxiliary model and the difference of payoff function $d(t,x)$ is sufficiently smooth. In other words, for $N \geq 1$, assume $\delta(t,x)$ and $d(t,x)$ to be $2N$ times differentiable with respect to $x$, $\delta(t,x)$ to be $N$ times differentiable with respect to $t$. By applying Ito-Taylor expansion to equation\eqref{feynman-kac rep}
+\noindent where $L$ is the infinitesimal generator we have defined in equation \eqref{general inf gen}, the remainder term $\mathcal{R}_{J}$ is given by
 
 \begin{equation}
-    \begin{gathered}
-        V(t, x)=\bar{V}(t,x)+\mathbb{E}_{t,x}\left[\exp \left(-\int_{t}^{T} R(s,X(s)) d s\right) d(T,X(T))\right] \\
-        \quad+\int_{t}^{T} \mathbb{E}_{t,x}\left[\exp \left(-\int_{t}^{s} R(u, X(u)) d u\right) \delta(s,X(s))\right] d s
-        \end{gathered}
+    \mathcal{R}_{J}=\mathbb{E}^{t, x}\left[\int_{t}^{s} d u_{1} \int_{t}^{u_{1}} d u_{2} \cdots \int_{t}^{u_{J}}L^{J+1} f\left(u_{J+1}, X\left(u_{J+1}\right)\right) d u_{J+1}\right]
 \end{equation}
 
-\noindent We can get a closed-form approximation formula
+For Ito-Taylor expansion to hold, KM imposes stronger assumptions for infinitesimal generator $L$:
+
+\begin{enumerate}
+    \item First, $L$ has a transition density $p_t(y|x)$ with respect to Lebesgue measure.
+    \item $L$ has an invariant measure $\pi$ satisfying: $\pi(x)p_t(y|x) = \pi(y)p_t(x|y)$.
+\end{enumerate}
+
+\noindent The first condition requires the considered diffusion model to have a transition density, this is satisfied in most financial models; The second condition is a generalization of time-reversibility. In particular, if the process is univariate and stationary, it is necessarily time-reversible and satisfies the second condition.
+
+Assume closed form solution of auxiliary model $\bar{w}$ under auxiliary model is sufficiently smooth. In other words, for $N \geq 1$, assume $\delta(t,x)$ to be $2N$ times differentiable with respect to $x$, and to be $N$ times differentiable with respect to $t$. By applying Ito-Taylor expansion to equation \eqref{feynman-kac rep}
+
+\begin{equation}
+    w(t, x)=\bar{w}(t,x)+\int_{t}^{T} \mathbb{E}^{t,x}\left[\exp \left(-\int_{t}^{s} R(u, X_u) d u\right) \delta(s,X_s)\right] d s
+\end{equation}
+
+\noindent Then KM proposes Definition 1(Asset Price Approximation) in his paper, it's given by
 
 \begin{equation}\label{approx formula}
-    V_{N}(t, x)=\bar{V}(t,x)+\sum_{n=0}^{N} \frac{(T-t)^{n}}{n !} d_{n}(t, x)+\sum_{n=0}^{N} \frac{(T-t)^{n+1}}{(n+1) !} \delta_{n}(t, x)
+    w_{N}(t, x)=\bar{w}(t,x)+\sum_{n=0}^{N} \frac{(T-t)^{n+1}}{(n+1) !} \delta_{n}(t, x)
 \end{equation}
 
-\noindent where $d_0(t,x)=d(x)$, $\delta_0(t,x)=\delta(t,x)$, and
+\noindent where $\delta_0$ is the original mispricing function in equation \eqref{mis-pricing}, and
 
 \begin{equation}
     \begin{aligned}
-        &d_{n}(t, x)=L d_{n-1}(t, x)-R(t, x) d_{n-1}(t, x) \\
+        &\delta_0(t,x) = \delta(t,x) \\
         &\delta_{n}(t, x)=L \delta_{n-1}(t, x)-R(t, x) \delta_{n-1}(t, x)
         \end{aligned}
 \end{equation}
 
-Note that the terms in equation(\eqref{approx formula}) can be calculated once for all, meaning that it be computed much faster than simulation methods using estimator.
+KM refers in his paper that the Ito-Taylor in equation \eqref{approx formula} can be calculated once for all, meaning once implemented, it requires no computation time. However, in practice, the number of terms in equation \eqref{approx formula} grows exponentially as we keeping expansion. When the expansion order $N$ is large, we must rely on symbolic languages to solve the approximation formula, the advantage of this method is constrained because process of solve for derivatives and further calculation can be very long. Example is discussed in our chapter \ref{ch4}.
 
-\section{Nuisance parameter selection}
-\label{sec: 2.3}
+At last, different from DOI method, KM's approximation method, based on the combination of price of auxiliary model and expansion of mispricing functions, leads to a nuisance parameter. This parameter does not affect the unknown price, but does enter the pricing formula for the auxiliary model. For example, if we use Black-Scholes model as auxiliary model to price options under Heston model, 
 
-As mentioned in \ref{sec: 2.2}, we use an auxiliary model and then expand the mis-pricing term, which leads to a nuisance parameter— a parameter that does not a¤ect the unknown price.
+$$
+\begin{aligned}
+    d S_{t}&=\mu S_{t} d t+\sqrt{v_{t}} S_{t} d W_{t}^{1} \\
+    d v_{t}&=\kappa\left(\theta-v_{t}\right) d t+\xi \sqrt{v_{t}} d W_{t}^{2}
+\end{aligned}
+$$
 
-to be added
-% \cite{auster_jdoi_2021} extends theoretical concept of DOI method to the pricing of American options under (time-homogeneous) Levy stochastic differential equations and gives a more comprehensive method on pricing American options. Here we talk about the method to price American options.
-% \normalsize 
+\noindent The mispricing function here is $\delta = \frac{1}{2}(v(t)-\sigma_0)S^2 \frac{\partial^2 w^{\text{bs}}}{\partial S^2}. $ Then the nuisance parameter is the instantaneous volatility $\sigma_0$ in Black-Shcoles model. KM proposes that when we approximate $w(x,t)$ with $w_N(x,t;\hat{\sigma_0})$, we consider
 
-% \begin{figure}[htp]
-% \centering
-% \includegraphics{sin_x.jpg}
-% \caption{Transverse momentum distributions}\label{fig:erptsqfit}
-% \end{figure}
+$$
+\hat{\sigma}_{N}(x, t)=\arg \min _{\sigma}\left(w_{N}(x, t ; \sigma)-w_{0}(x, t ; \sigma)\right)^{2}
+$$
 
+\noindent where $w_{0}(x, t ; \sigma)\equiv w^{\text{bs}}(x, t ; \sigma)$. Thus we can set instantaneous volatility to be the spot value of volatility in Heston model, or be the long-time mean of Heston model, that's is, $\sigma_0 = v(t)$ or $\sigma_0 = \theta$. In our case, the setting of nuisance parameter is specified in chapter \ref{ch4}.
