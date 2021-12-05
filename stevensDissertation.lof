@@ -5,11 +5,11 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces SR mean-reverting call price with regard to volatility\relax }}{11}{figure.caption.5}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Three Greeks comparison between our formula and finite difference method\relax }}{21}{figure.caption.6}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Delta comparison}}}{21}{subfigure.3.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error between our formula and finite difference method}}}{21}{subfigure.3.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {absolute error between our formula and finite difference method}}}{21}{subfigure.3.2}%
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Gamma comparison}}}{21}{subfigure.3.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {relative error between our formula and finite difference method}}}{21}{subfigure.3.4}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {absolute error between our formula and finite difference method}}}{21}{subfigure.3.4}%
 \contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Theta comparison}}}{21}{subfigure.3.5}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {relative error between our formula and finite difference method}}}{21}{subfigure.3.6}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {absolute error between our formula and finite difference method}}}{21}{subfigure.3.6}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces mean-reverting CEV model result 1\relax }}{26}{figure.caption.7}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison with $\tau =0.1$}}}{26}{subfigure.1.1}%

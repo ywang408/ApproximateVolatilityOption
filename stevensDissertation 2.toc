@@ -1,0 +1,22 @@
+\contentsline {chapter}{Abstract}{iii}{Doc-Start}%
+\contentsline {chapter}{Dedication}{iv}{Doc-Start}%
+\contentsline {chapter}{Acknowledgments}{iv}{Doc-Start}%
+\contentsline {chapter}{List of Tables}{vii}{chapter*.1}%
+\contentsline {chapter}{List of Figures}{viii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Method Description}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The DOI Variance Reduction Method}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}KM's approximation Method based on the DOI method}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Nuisance parameter selection}{7}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Approximations of VIX options}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Approximating options under mean-reverting CEV model}{8}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Drawbacks of using Black-Scholes model as an auxiliary model}{8}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Using square root mean-reverting model as auxiliary model}{10}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Method to Calculate Derivatives In Expansions}{12}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Approximating options under double Heston model}{18}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Numerical Results}{20}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Volatility option prices under mean-reverting CEV model}{20}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Volatility option prices under Heston puls CEV model}{23}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{26}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Appendix A Mean-Reverting CEV model Numerical Results}{1}{appendix.A}%
+\contentsline {chapter}{Bibliography}{3}{table.caption.12}%

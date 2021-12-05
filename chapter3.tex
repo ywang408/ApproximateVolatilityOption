@@ -32,9 +32,7 @@ $$
 
 $$\delta^{\text{bs}} = (L - L^{\text{bs}}) w^{\text{bs}} = (\kappa - r)V \frac{\partial w^{\text{bs}}}{\partial t} + \kappa m \frac{\partial w^{\text{bs}}}{\partial t} + \sigma^{2} (V - V^{2 \gamma}) \frac{\partial^{2} w^{\text{bs}}}{\partial V^{2}} $$
 
-\noindent with the solution of Black-Scholes model $w^{\text{bs}}$. Note that $\delta^{\text{bs}}$ contains theta and gamma of option. Their differences in Black-Scholes model and mean-reverting model determines that we have to use other auxiliary models.
-
-Take call option prices under $\gamma=\frac{1}{2}$ in model\eqref{mr} as an example. This model is known as Square Root(SR) Mean-Reverting model proposed by \cite{grunbichler_valuing_1996}(GL). GL also gives an explicit option price formula under this model, we will use it to illustrate our reason more clearly.
+\noindent with the solution of Black-Scholes model $w^{\text{bs}}$. Note that $\delta^{\text{bs}}$ contains Theta and Gamma of option. Their differences in Black-Scholes model and mean-reverting model determines that we have to use other auxiliary models. Take call option prices under $\gamma=\frac{1}{2}$ in mean-reverting CEV model\eqref{mr} as an example. This model is known as Square Root(SR) Mean-Reverting model proposed by \cite{grunbichler_valuing_1996}(GL). GL also gives an explicit option price formula under this model, we will use it to illustrate our reason more clearly.
 
 
 \begin{figure}[ht]
@@ -272,13 +270,13 @@ $$
     \centering
     \subfloat[Delta comparison]{\includegraphics[width=0.5\textwidth]{./figures/delta comparison.png}\label{delta comparison}}
     \hfill
-    \subfloat[relative error between our formula and finite difference method]{\includegraphics[width=0.5\textwidth]{./figures/delta diff.png}\label{delta diff}} \\
+    \subfloat[absolute error between our formula and finite difference method]{\includegraphics[width=0.5\textwidth]{./figures/delta diff.png}\label{delta diff}} \\
     \subfloat[Gamma comparison]{\includegraphics[width=0.5\textwidth]{./figures/gamma comparison.png}\label{gamma comparison}}
     \hfill
-    \subfloat[relative error between our formula and finite difference method]{\includegraphics[width=0.5\textwidth]{./figures/gamma diff.png}\label{gamma diff}} \\
+    \subfloat[absolute error between our formula and finite difference method]{\includegraphics[width=0.5\textwidth]{./figures/gamma diff.png}\label{gamma diff}} \\
     \subfloat[Theta comparison]{\includegraphics[width=0.5\textwidth]{./figures/theta comparison.png}\label{theta comparison}}
     \hfill
-    \subfloat[relative error between our formula and finite difference method]{\includegraphics[width=0.5\textwidth]{./figures/theta diff.png}\label{theta diff}} 
+    \subfloat[absolute error between our formula and finite difference method]{\includegraphics[width=0.5\textwidth]{./figures/theta diff.png}\label{theta diff}} 
     \caption{Three Greeks comparison between our formula and finite difference method}\label{greeks}
   \end{figure}
 
