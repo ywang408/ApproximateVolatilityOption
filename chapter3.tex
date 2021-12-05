@@ -168,7 +168,7 @@ $$
 \frac{\partial p(y;\nu,\lambda)}{\partial y}=\frac{1}{2}[-p(y ; \nu, \lambda)+p(y ; \nu-2, \lambda)]
 $$
 
-\noindent because degrees of freedom must be larger than 0. Using the non-central chi-square property by \cite{cohen_noncentral_1988} we can do the following transformation
+\noindent because degrees of freedom must be larger than 0. Using the non-central chi-square property by \cite{cohen_noncentral_1988} we can do the following transformation to control degrees of freedom in our desired bounds
 
 \begin{equation}\label{trans}
     \begin{aligned}
@@ -262,7 +262,7 @@ $$
 \begin{aligned}
     &\Delta^{fm} = \frac{\partial C}{\partial V} \approx \frac{C(V+\Delta)-C(V)}{\Delta V} \\
     &\Gamma^{fm} = \frac{\partial \Delta^{fm}}{\partial V} \approx \frac{\Delta^{fm}(V+\Delta)-\Delta^{fm}(V)}{\Delta V} \\
-    &\Theta^{fm} = \frac{\partial C}{\partial t} \approx \frac{C(t+\Delta)-C(S)}{\Delta t} \\
+    &\Theta^{fm} = \frac{\partial C}{\partial t} \approx \frac{C(t+\Delta)-C(t)}{\Delta t} \\
 \end{aligned}
 $$
 
@@ -303,7 +303,7 @@ $$
     \end{aligned}
 $$
 
-\noindent where $\gamma_1, \gamma_2 \in [\frac{1}{2},1]$.
+\noindent where $\gamma_1, \gamma_2 \in [\frac{1}{2},1]$, $dW_t dW^{\prime}_t = \rho dt$
 
 \begin{itemize}
     \item It's called Double Heston model in the case $\gamma_1=\gamma_2=\frac{1}{2}$.
@@ -311,7 +311,7 @@ $$
     \item And the general Double CEV model.
 \end{itemize}
 
-We will discuss using our method to price options under double CEV model with $\gamma_1 = \frac{1}{2}, \gamma_2 \in [\frac{1}{2}, 1]$. That is
+We will discuss using our method to price options under double CEV model with $\gamma_1 = \frac{1}{2}, \gamma_2 \in [\frac{1}{2}, 1]$. We call it Heston plus CEV model. That is
 
 $$
 \begin{aligned}\label{heston cev}

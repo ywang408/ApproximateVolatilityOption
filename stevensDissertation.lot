@@ -4,4 +4,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces T=0.3,K=0.15, kappa=4,m=0.2, sigma=0.15, gamma=0.3.csv\relax }}{2}{table.caption.11}%
+\contentsline {table}{\numberline {A.1}{\ignorespaces heston cev rho=0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv\relax }}{2}{table.caption.12}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces heston cev rho=0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv\relax }}{2}{table.caption.13}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv\relax }}{3}{table.caption.14}%
+\contentsline {table}{\numberline {A.4}{\ignorespaces heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv\relax }}{3}{table.caption.15}%
+\contentsline {table}{\numberline {A.5}{\ignorespaces heston cev rho=-0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv\relax }}{4}{table.caption.16}%
+\contentsline {table}{\numberline {A.6}{\ignorespaces heston cev rho=-0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv\relax }}{4}{table.caption.17}%
+\contentsline {table}{\numberline {A.7}{\ignorespaces heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv\relax }}{5}{table.caption.18}%
