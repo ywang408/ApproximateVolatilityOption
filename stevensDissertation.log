@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.27)  5 DEC 2021 15:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.27)  5 DEC 2021 22:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -861,63 +861,64 @@ File: ./figures/T=0.3,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 price.png Gr
 <use ./figures/T=0.3,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 price.png>
 Package pdftex.def Info: ./figures/T=0.3,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 price.png  used on input line 43.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-File: ./figures/T=0.3,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 price.png Graphic file (type png)
-<use ./figures/T=0.3,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 price.png>
-Package pdftex.def Info: ./figures/T=0.3,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 price.png  used on input line 45.
+<./figures/T=0.3,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 error.png, id=468, 433.62pt x 289.08pt>
+File: ./figures/T=0.3,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 error.png Graphic file (type png)
+<use ./figures/T=0.3,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 error.png>
+Package pdftex.def Info: ./figures/T=0.3,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 error.png  used on input line 45.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 price.png, id=468, 433.62pt x 289.08pt>
+<./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 price.png, id=469, 433.62pt x 289.08pt>
 File: ./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 price.png Graphic file (type png)
 <use ./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 price.png>
 Package pdftex.def Info: ./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 price.png  used on input line 46.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 error.png, id=469, 433.62pt x 289.08pt>
+<./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 error.png, id=470, 433.62pt x 289.08pt>
 File: ./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 error.png Graphic file (type png)
 <use ./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 error.png>
 Package pdftex.def Info: ./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 error.png  used on input line 48.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
  [23]
-<./figures/T=0.1,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png, id=486, 433.62pt x 289.08pt>
+<./figures/T=0.1,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png, id=487, 433.62pt x 289.08pt>
 File: ./figures/T=0.1,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png Graphic file (type png)
 <use ./figures/T=0.1,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png>
 Package pdftex.def Info: ./figures/T=0.1,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png  used on input line 64.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/T=0.1,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png, id=487, 433.62pt x 289.08pt>
+<./figures/T=0.1,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png, id=488, 433.62pt x 289.08pt>
 File: ./figures/T=0.1,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png Graphic file (type png)
 <use ./figures/T=0.1,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png>
 Package pdftex.def Info: ./figures/T=0.1,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png  used on input line 66.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/T=0.3,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png, id=488, 433.62pt x 289.08pt>
+<./figures/T=0.3,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png, id=489, 433.62pt x 289.08pt>
 File: ./figures/T=0.3,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png Graphic file (type png)
 <use ./figures/T=0.3,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png>
 Package pdftex.def Info: ./figures/T=0.3,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png  used on input line 67.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/T=0.3,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png, id=489, 433.62pt x 289.08pt>
+<./figures/T=0.3,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png, id=490, 433.62pt x 289.08pt>
 File: ./figures/T=0.3,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png Graphic file (type png)
 <use ./figures/T=0.3,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png>
 Package pdftex.def Info: ./figures/T=0.3,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png  used on input line 69.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/T=0.5,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png, id=490, 433.62pt x 289.08pt>
+<./figures/T=0.5,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png, id=491, 433.62pt x 289.08pt>
 File: ./figures/T=0.5,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png Graphic file (type png)
 <use ./figures/T=0.5,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png>
 Package pdftex.def Info: ./figures/T=0.5,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png  used on input line 70.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/T=0.5,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png, id=491, 433.62pt x 289.08pt>
+<./figures/T=0.5,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png, id=492, 433.62pt x 289.08pt>
 File: ./figures/T=0.5,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png Graphic file (type png)
 <use ./figures/T=0.5,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png>
 Package pdftex.def Info: ./figures/T=0.5,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png  used on input line 72.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
  [24]
-<./figures/heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png, id=496, 433.62pt x 289.08pt>
+<./figures/heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png, id=497, 433.62pt x 289.08pt>
 File: ./figures/heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png Graphic file (type png)
 <use ./figures/heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png>
 Package pdftex.def Info: ./figures/heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png  used on input line 99.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png, id=497, 433.62pt x 289.08pt>
+<./figures/heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png, id=498, 433.62pt x 289.08pt>
 File: ./figures/heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png Graphic file (type png)
 <use ./figures/heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png>
 Package pdftex.def Info: ./figures/heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png  used on input line 101.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/heston cev rho=0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png, id=498, 433.62pt x 289.08pt>
+<./figures/heston cev rho=0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png, id=499, 433.62pt x 289.08pt>
 File: ./figures/heston cev rho=0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png Graphic file (type png)
 <use ./figures/heston cev rho=0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png>
 Package pdftex.def Info: ./figures/heston cev rho=0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png  used on input line 102.
@@ -926,7 +927,7 @@ File: ./figures/heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, si
 <use ./figures/heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png>
 Package pdftex.def Info: ./figures/heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png  used on input line 104.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/heston cev rho=0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png, id=499, 433.62pt x 289.08pt>
+<./figures/heston cev rho=0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png, id=500, 433.62pt x 289.08pt>
 File: ./figures/heston cev rho=0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png Graphic file (type png)
 <use ./figures/heston cev rho=0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png>
 Package pdftex.def Info: ./figures/heston cev rho=0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png  used on input line 105.
@@ -935,17 +936,17 @@ File: ./figures/heston cev rho=0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, si
 <use ./figures/heston cev rho=0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png>
 Package pdftex.def Info: ./figures/heston cev rho=0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png  used on input line 107.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png, id=502, 433.62pt x 289.08pt>
+<./figures/heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png, id=503, 433.62pt x 289.08pt>
 File: ./figures/heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png Graphic file (type png)
 <use ./figures/heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png>
 Package pdftex.def Info: ./figures/heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png  used on input line 117.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png, id=503, 433.62pt x 289.08pt>
+<./figures/heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png, id=504, 433.62pt x 289.08pt>
 File: ./figures/heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png Graphic file (type png)
 <use ./figures/heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png>
 Package pdftex.def Info: ./figures/heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png  used on input line 119.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/heston cev rho=-0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png, id=504, 433.62pt x 289.08pt>
+<./figures/heston cev rho=-0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png, id=505, 433.62pt x 289.08pt>
 File: ./figures/heston cev rho=-0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png Graphic file (type png)
 <use ./figures/heston cev rho=-0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png>
 Package pdftex.def Info: ./figures/heston cev rho=-0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png  used on input line 120.
@@ -954,7 +955,7 @@ File: ./figures/heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, s
 <use ./figures/heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png>
 Package pdftex.def Info: ./figures/heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png  used on input line 122.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-<./figures/heston cev rho=-0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png, id=505, 433.62pt x 289.08pt>
+<./figures/heston cev rho=-0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png, id=506, 433.62pt x 289.08pt>
 File: ./figures/heston cev rho=-0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png Graphic file (type png)
 <use ./figures/heston cev rho=-0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png>
 Package pdftex.def Info: ./figures/heston cev rho=-0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png  used on input line 123.
@@ -963,7 +964,7 @@ File: ./figures/heston cev rho=-0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, s
 <use ./figures/heston cev rho=-0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png>
 Package pdftex.def Info: ./figures/heston cev rho=-0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png  used on input line 125.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
- [25] [26 <./figures/T=0.1,K=0.15, kappa=4,m=0.15, sigma=0.15, gamma=0.15 price.png> <./figures/T=0.1,K=0.15, kappa=4,m=0.15, sigma=0.15, gamma=0.15 error.png> <./figures/T=0.3,K=0.15, kappa=4,m=0.15, sigma=0.15, gamma=0.15 price.png> <./figures/T=0.3,K=0.15, kappa=4,m=0.15, sigma=0.15, gamma=0.15 error.png> <./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.15, gamma=0.15 price.png> <./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.15, gamma=0.15 error.png>] [27 <./figures/T=0.1,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 price.png> <./figures/T=0.1,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 error.png> <./figures/T=0.3,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 price.png> <./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 price.png> <./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 error.png>] [28 <./figures/T=0.1,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png> <./figures/T=0.1,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png> <./figures/T=0.3,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png> <./figures/T=0.3,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png> <./figures/T=0.5,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png> <./figures/T=0.5,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png>] [29 <./figures/heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png> <./figures/heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png> <./figures/heston cev rho=0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png> <./figures/heston cev rho=0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png>] [30 <./figures/heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png> <./figures/heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png> <./figures/heston cev rho=-0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png> <./figures/heston cev rho=-0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png>]
+ [25] [26 <./figures/T=0.1,K=0.15, kappa=4,m=0.15, sigma=0.15, gamma=0.15 price.png> <./figures/T=0.1,K=0.15, kappa=4,m=0.15, sigma=0.15, gamma=0.15 error.png> <./figures/T=0.3,K=0.15, kappa=4,m=0.15, sigma=0.15, gamma=0.15 price.png> <./figures/T=0.3,K=0.15, kappa=4,m=0.15, sigma=0.15, gamma=0.15 error.png> <./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.15, gamma=0.15 price.png> <./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.15, gamma=0.15 error.png>] [27 <./figures/T=0.1,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 price.png> <./figures/T=0.1,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 error.png> <./figures/T=0.3,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 price.png> <./figures/T=0.3,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 error.png> <./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 price.png> <./figures/T=0.5,K=0.15, kappa=4,m=0.15, sigma=0.6, gamma=0.75 error.png>] [28 <./figures/T=0.1,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png> <./figures/T=0.1,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png> <./figures/T=0.3,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png> <./figures/T=0.3,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png> <./figures/T=0.5,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png> <./figures/T=0.5,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png>] [29 <./figures/heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png> <./figures/heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png> <./figures/heston cev rho=0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png> <./figures/heston cev rho=0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png>] [30 <./figures/heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png> <./figures/heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png> <./figures/heston cev rho=-0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 price.png> <./figures/heston cev rho=-0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6 error.png>]
 Chapter 5.
 ) [31
 
@@ -1010,18 +1011,18 @@ Package rerunfilecheck Info: File `stevensDissertation.out' has not changed.
 (rerunfilecheck)             Checksum: F732B46A884D331AE86E3D163E0AE9CF;4076.
  ) 
 Here is how much of TeX's memory you used:
- 22978 strings out of 478994
- 422232 string characters out of 5858183
+ 22984 strings out of 478994
+ 422669 string characters out of 5858183
  726036 words of memory out of 5000000
- 39780 multiletter control sequences out of 15000+600000
+ 39785 multiletter control sequences out of 15000+600000
  414351 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,14n,88p,1576b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,14n,88p,1599b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on stevensDissertation.pdf (45 pages, 789897 bytes).
+Output written on stevensDissertation.pdf (45 pages, 806906 bytes).
 PDF statistics:
- 704 PDF objects out of 1000 (max. 8388607)
+ 706 PDF objects out of 1000 (max. 8388607)
  570 compressed objects within 6 object streams
  163 named destinations out of 1000 (max. 500000)
- 338 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 343 words of extra memory for PDF output out of 10000 (max. 10000000)
 
