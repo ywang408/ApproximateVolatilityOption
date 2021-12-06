@@ -1,50 +1,50 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces SR mean-reverting call price with regard to time to maturity\relax }}{10}{figure.caption.4}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces SR mean-reverting call price with regard to volatility\relax }}{11}{figure.caption.5}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Three Greeks comparison between our formula and finite difference method\relax }}{21}{figure.caption.6}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Delta comparison}}}{21}{subfigure.3.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {absolute error between our formula and finite difference method}}}{21}{subfigure.3.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Gamma comparison}}}{21}{subfigure.3.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {absolute error between our formula and finite difference method}}}{21}{subfigure.3.4}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Theta comparison}}}{21}{subfigure.3.5}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {absolute error between our formula and finite difference method}}}{21}{subfigure.3.6}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces SR mean-reverting call price with regard to time to maturity\relax }}{11}{figure.caption.4}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces SR mean-reverting call price with regard to volatility\relax }}{12}{figure.caption.5}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Three Greeks comparison between our formula and finite difference method\relax }}{22}{figure.caption.6}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Delta comparison}}}{22}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {absolute error between our formula and finite difference method}}}{22}{subfigure.3.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Gamma comparison}}}{22}{subfigure.3.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {absolute error between our formula and finite difference method}}}{22}{subfigure.3.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Theta comparison}}}{22}{subfigure.3.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {absolute error between our formula and finite difference method}}}{22}{subfigure.3.6}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces mean-reverting CEV model result 1\relax }}{26}{figure.caption.7}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison with $\tau =0.1$}}}{26}{subfigure.1.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error with $\tau =0.1$}}}{26}{subfigure.1.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {price comparison with $\tau =0.3$}}}{26}{subfigure.1.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {relative error with $\tau =0.3$}}}{26}{subfigure.1.4}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {price comparison with $\tau =0.5$}}}{26}{subfigure.1.5}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {relative error with $\tau =0.5$}}}{26}{subfigure.1.6}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces mean-reverting CEV model result 2\relax }}{27}{figure.caption.8}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison with $\tau =0.1$}}}{27}{subfigure.2.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error with $\tau =0.1$}}}{27}{subfigure.2.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {price comparison with $\tau =0.3$}}}{27}{subfigure.2.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {relative error with $\tau =0.3$}}}{27}{subfigure.2.4}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {price comparison with $\tau =0.5$}}}{27}{subfigure.2.5}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {relative error with $\tau =0.5$}}}{27}{subfigure.2.6}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces mean-reverting CEV model result 3\relax }}{28}{figure.caption.9}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison with $\tau =0.1$}}}{28}{subfigure.3.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error with $\tau =0.1$}}}{28}{subfigure.3.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {price comparison with $\tau =0.3$}}}{28}{subfigure.3.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {relative error with $\tau =0.3$}}}{28}{subfigure.3.4}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {price comparison with $\tau =0.5$}}}{28}{subfigure.3.5}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {relative error with $\tau =0.5$}}}{28}{subfigure.3.6}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Heston plus CEV model result 1\relax }}{29}{figure.caption.10}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison with $\tau =0.1$}}}{29}{subfigure.4.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error with $\tau =0.1$}}}{29}{subfigure.4.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {price comparison with $\tau =0.3$}}}{29}{subfigure.4.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {relative error with $\tau =0.3$}}}{29}{subfigure.4.4}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {price comparison with $\tau =0.5$}}}{29}{subfigure.4.5}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {relative error with $\tau =0.5$}}}{29}{subfigure.4.6}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Heston plus CEV model result 2\relax }}{30}{figure.caption.11}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison with $\tau =0.1$}}}{30}{subfigure.5.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error with $\tau =0.1$}}}{30}{subfigure.5.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {price comparison with $\tau =0.3$}}}{30}{subfigure.5.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {relative error with $\tau =0.3$}}}{30}{subfigure.5.4}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {price comparison with $\tau =0.5$}}}{30}{subfigure.5.5}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {relative error with $\tau =0.5$}}}{30}{subfigure.5.6}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces mean-reverting CEV model result 1\relax }}{27}{figure.caption.7}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison with $\tau =0.1$}}}{27}{subfigure.1.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error with $\tau =0.1$}}}{27}{subfigure.1.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {price comparison with $\tau =0.3$}}}{27}{subfigure.1.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {relative error with $\tau =0.3$}}}{27}{subfigure.1.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {price comparison with $\tau =0.5$}}}{27}{subfigure.1.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {relative error with $\tau =0.5$}}}{27}{subfigure.1.6}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces mean-reverting CEV model result 2\relax }}{28}{figure.caption.8}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison with $\tau =0.1$}}}{28}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error with $\tau =0.1$}}}{28}{subfigure.2.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {price comparison with $\tau =0.3$}}}{28}{subfigure.2.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {relative error with $\tau =0.3$}}}{28}{subfigure.2.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {price comparison with $\tau =0.5$}}}{28}{subfigure.2.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {relative error with $\tau =0.5$}}}{28}{subfigure.2.6}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces mean-reverting CEV model result 3\relax }}{29}{figure.caption.9}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison with $\tau =0.1$}}}{29}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error with $\tau =0.1$}}}{29}{subfigure.3.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {price comparison with $\tau =0.3$}}}{29}{subfigure.3.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {relative error with $\tau =0.3$}}}{29}{subfigure.3.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {price comparison with $\tau =0.5$}}}{29}{subfigure.3.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {relative error with $\tau =0.5$}}}{29}{subfigure.3.6}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Heston plus CEV model result 1\relax }}{30}{figure.caption.10}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison with $\tau =0.1$}}}{30}{subfigure.4.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error with $\tau =0.1$}}}{30}{subfigure.4.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {price comparison with $\tau =0.3$}}}{30}{subfigure.4.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {relative error with $\tau =0.3$}}}{30}{subfigure.4.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {price comparison with $\tau =0.5$}}}{30}{subfigure.4.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {relative error with $\tau =0.5$}}}{30}{subfigure.4.6}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Heston plus CEV model result 2\relax }}{31}{figure.caption.11}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison with $\tau =0.1$}}}{31}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error with $\tau =0.1$}}}{31}{subfigure.5.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {price comparison with $\tau =0.3$}}}{31}{subfigure.5.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {relative error with $\tau =0.3$}}}{31}{subfigure.5.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {price comparison with $\tau =0.5$}}}{31}{subfigure.5.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {relative error with $\tau =0.5$}}}{31}{subfigure.5.6}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

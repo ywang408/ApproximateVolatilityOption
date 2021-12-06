@@ -47,7 +47,7 @@ $$\delta^{\text{bs}} = (L - L^{\text{bs}}) w^{\text{bs}} = (\kappa - r)V \frac{\
     \caption{SR mean-reverting call price with regard to volatility}\label{call2v}
 \end{figure}
 
-Figure \ref{call2t} and \ref{call2v} are option price changes with the change of time to maturity and underlying asset price correspondingly. From figure \ref{call2t}, we can find that in contrast to Black-Scholes model, the value of call option price under mean-reverting model is not always increasing as time to maturity increases; From figure \ref{call2v}, by contrast, the call option price does not converge to zero like option under Black-Scholes model as volatility goes to zero. In addition, GL also shows that $V_t$ has less influence of the current value of the call option than in Black-Scholes model. For these reasons, we conclude that Black-Scholes model is not an appropriate auxiliary model.
+Figure \ref{call2t} and \ref{call2v} are option price changes with the change of time to maturity and underlying asset price correspondingly. From figure \ref{call2t}, we can find that in contrast to Black-Scholes model, the value of call option price under mean-reverting model is not always increasing as time to maturity increases; From figure \ref{call2v}, by contrast, the call option price does not converge to zero like option under Black-Scholes model as volatility goes to zero. In addition, \cite{grunbichler_valuing_1996} also show that $V_t$ has less influence of the current value of the call option than in Black-Scholes model. For these reasons, we conclude that Black-Scholes model is not an appropriate auxiliary model.
 
 Next we discuss that using the SR mean-reverting model as the auxiliary model, it's a special case of mean-reverting CEV model with $\gamma=\frac{1}{2}$
 
@@ -55,7 +55,7 @@ Next we discuss that using the SR mean-reverting model as the auxiliary model, i
     d V_t=\kappa(m - V_t) d t+\sigma \sqrt{V_t} d W_t
 \end{equation}
 
-\noindent We are going to use it as our auxiliary model as it captures the mean-reverting property of general mean-reverting CEV models. GL gives an explicit option price formula to this model.
+\noindent We are going to use it as our auxiliary model as it captures the mean-reverting property of general mean-reverting CEV models. \cite{grunbichler_valuing_1996} give an explicit option price formula to this model.
 
 \begin{equation}\label{aux call price}
     \begin{aligned}
@@ -87,7 +87,7 @@ Define the infinitesimal generators $\bar{L}$ for square root mean-reverting mod
     \end{aligned}
 \end{equation}
 
-Subtract infinitesimal generators in equation\eqref{inf gen1}, we get the mis-pricing formula for using square root mean-reverting model
+Subtract infinitesimal generators in equation\eqref{inf gen1}, we get the mispricing formula for using square root mean-reverting model
 
 $$
 \delta = (L - \bar{L}) \bar{w} = \frac{1}{2} \sigma^{2} (V^{2\gamma} - V) \frac{\partial^{2} w}{\partial V^{2}}
@@ -284,7 +284,7 @@ From \eqref{mispricing} we know that the mispricing function $\delta = \frac{1}{
 
 \begin{enumerate}
     \item Use chain rule combining with \eqref{ccdf diff2} and \eqref{pdf diff2}to apply infinitesimal generator on current mispricing function $\delta_{n}$.
-    \item Substitute PDFs inside $\delta_n$ with noncentral parameter $\nu+i$ where $i \notin [2,6]$.
+    \item Substitute PDFs inside $\delta_n$ with non-central parameter $\nu+i$ where $i \notin [2,6]$.
     \item Then we get $\delta_{n+1}$, to calculate higher order approximation formula, go back to step 1.
 \end{enumerate}
 
