@@ -5,7 +5,7 @@ In this section, we will discuss HP's DOI method and KM's approximation method. 
 \section{The DOI Variance Reduction Method}
 \label{sec: 2.1}
 
-Consider a multi-factor model, in which a $d$-dimensional vector of state variables $X_t$ on a filtered probability space$(\Omega,\mathcal F, \mathbb Q)$ satisfies the following Stochastic Differential Equations(SDEs)
+Consider a multi-factor model, in which a $d$-dimensional vector of state variables $X_t$ on a filtered probability space$(\Omega,\mathcal F, \mathbb Q)$ satisfies the following stochastic differential equations(SDEs)
 
 \begin{equation}\label{general model}
     dX_t= \mu(t, X_t) dt + \sigma(t, X_t) dW_t
@@ -21,7 +21,7 @@ Let $w(t,x)$ be the valuation function satisfying $w: [0,T] \times \Gamma$, payo
     \end{aligned}
 \end{equation}
 
-Let $R(t,x)$ be the instantaneous short-term interest rate also satisfying $R: B \rightarrow \mathbb R$, combining with equation \eqref{general model} and equation \eqref{general inf gen}, the task is to find an approximation to the solution to the following partial differential equation(PDE)
+Let $R(t,x)$ be the instantaneous short-term interest rate also satisfying $R: B \rightarrow \mathbb R$, combining with equation \eqref{general model} and equation \eqref{general inf gen}, the task is to find an approximation to the solution to the following partial differential equation (PDE)
 
 \begin{equation}\label{pde under general}
     Lw(x,t) = R(x,t)w(x,t)
@@ -38,7 +38,7 @@ Next we consider to use a $m$-dimensional($m \leq d$) process $\bar{X}(t)$ which
         \end{aligned}
 \end{equation}
 
-\noindent where $\bar{\mu}(t, \bar{X}_t)$ and $\bar{\sigma}(t, \bar{X}_t)$ are drift and diffusion functions, and they are also assumed to satisfy appropriate conditions such that equation(\ref{approx model}) admits a unique strong solution and is Markovian. In KM's method, it's automatically satisfied because he supposes there always exists closed-from solution to auxiliary model such that Ito-Taylor expansions can be applied further.
+\noindent where $\bar{\mu}(t, \bar{X}_t)$ and $\bar{\sigma}(t, \bar{X}_t)$ are drift and diffusion functions, and they are also assumed to satisfy appropriate conditions such that equation(\ref{approx model}) admits a unique strong solution and is Markovian. In KM's method, it is automatically satisfied because they suppose that there always exists a closed-from solution to auxiliary model such that Ito-Taylor expansions can be applied further.
 
 Let $\bar{w}(t,x)$ be the option price written on process $\bar{X}_t$, the infinitesimal generator $\bar{L}$ for option price $\bar{w}$ is the same as equation(\ref{general inf gen}) but replacing $\mu(t,x)$, $\sigma(t,x)$ by $\bar{\mu}(t,x)$ and $\bar{\sigma}(t,x)$. Therefore $\bar{w}(t,x)$ is a solution to
 
@@ -61,7 +61,7 @@ Denote the price difference $\Delta w(t,x) = w(t,x) - \bar{w}(t,x)$, then $\Delt
     \end{aligned}
 \end{equation}
 
-\noindent using Feynman-Kac representation leads to option price $w(t,x)$ taking the following form
+\noindent using the Feynman-Kac representation leads to option price $w(t,x)$ taking the following form
 
 \begin{equation}\label{feynman-kac rep}
         w(t, x)=\bar{w}(t,x)+\int_{t}^{T} \mathbb{E}^{t,x}\left[\exp \left(-\int_{t}^{s} R(u, X_u) d u\right) \delta(s,X_s)\right] d s
@@ -124,7 +124,7 @@ Assume closed form solution of auxiliary model $\bar{w}$ under auxiliary model i
 
 KM refers in his paper that the Ito-Taylor in equation \eqref{approx formula} can be calculated once for all, meaning once implemented, it requires no computation time. However, in practice, the number of terms in equation \eqref{approx formula} grows exponentially as we keeping expansion. When the expansion order $N$ is large, we must rely on symbolic languages to solve the approximation formula, the advantage of this method is constrained because process of solve for derivatives and further calculation can be very long. Example is discussed in our chapter \ref{ch4}.
 
-At last, different from DOI method, KM's approximation method, based on the combination of price of auxiliary model and expansion of mispricing functions, leads to a nuisance parameter. This parameter does not affect the unknown price, but does enter the pricing formula for the auxiliary model. For example, if we use Black-Scholes model as auxiliary model to price options under Heston model, 
+At last, different from the DOI method, KM's approximation method, is based on the combination of price of auxiliary model and the expansion of mispricing functions, which leads to a nuisance parameter. This parameter does not affect the unknown price, but does enter the pricing formula for the auxiliary model. For example, if we use Black-Scholes model as auxiliary model to price options under Heston model, 
 
 $$
 \begin{aligned}
