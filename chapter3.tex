@@ -90,7 +90,7 @@ Define the infinitesimal generators $\bar{L}$ for square root mean-reverting mod
 Subtract infinitesimal generators in equation\eqref{inf gen1}, we get the mispricing formula for using square root mean-reverting model
 
 $$
-\delta = (L - \bar{L}) \bar{w} = \frac{1}{2} \sigma^{2} (V^{2\gamma} - V) \frac{\partial^{2} w}{\partial V^{2}}
+\delta = (L - \bar{L}) \bar{w} = \frac{1}{2} \sigma^{2} (V^{2\gamma} - V) \frac{\partial^{2} \bar{w}}{\partial V^{2}}
 $$
 
 \noindent We can then use the approximation formula discussed in \ref{sec: 2.2} to price call options under mean-reverting CEV model\footnote{Put options can be priced easily in the same way}
@@ -103,7 +103,7 @@ $$
 
 \begin{equation}\label{mispricing}
     \begin{aligned}
-        &\delta_0 = \delta = \frac{1}{2} \sigma^{2} (V^{2\gamma} - V) \frac{\partial^{2} w}{\partial V^{2}} \\
+        &\delta_0 = \delta = \frac{1}{2} \sigma^{2} (V^{2\gamma} - V) \frac{\partial^{2} \bar{w}}{\partial V^{2}} \\
         &\delta_{n}(t, x)=L \delta_{n-1}(t, x)- r\delta_{n-1}(t, x)
         \end{aligned}
 \end{equation}
@@ -112,7 +112,7 @@ The use of SR mean-reverting model keeps the mean-reverting property in our auxi
 
 \subsection{Derivatives of non-central chi-square distribution}
 
-In this section, we introduce our method to calculate derivatives of non-central chi-square distribution and further combine it with approximation methods. Our method is based on the recurrence relation of non-central chi-square distribution proposed by \cite{cohen_noncentral_1988}, which is
+In this section, we introduce our method\footnote{We're inspired by \cite{larguinho_computation_2013}, in which they use similar method to calculate Greeks of CEV model.} to calculate derivatives of non-central chi-square distribution and further combine it with approximation methods. Our method is based on the recurrence relation of non-central chi-square distribution proposed by \cite{cohen_noncentral_1988}, which is
 
 \begin{equation}\label{pdf diff}
     \begin{gathered}
@@ -121,7 +121,7 @@ In this section, we introduce our method to calculate derivatives of non-central
     \end{gathered}
 \end{equation}
 
-\noindent where $p(y;\nu,\lambda)$ is the Probability Density Function(PDF) of non-central chi-square distribution with degrees of freedom $\nu$ and non-central parameter $\lambda$. From the relationship between Complementary Cumulative Distribution Function(CCDF) $Q(y;\nu,\lambda)$, Cumulative Distribution Function(CDF) $F(y;\nu,\lambda)$, and PDF we know that
+\noindent where $p(y;\nu,\lambda)$ is the Probability Density Function(PDF) of non-central chi-square distribution with degrees of freedom $\nu$ and non-central parameter $\lambda$. From the relationship between Complementary Cumulative Distribution Function(CCDF) $Q(y;\nu,\lambda)$, Cumulative Distribution Function(CDF) $F(y;\nu,\lambda)$, and about PDF we know that
 
 \begin{equation}\label{CCDF2x}
     \begin{aligned}
@@ -334,7 +334,13 @@ $$
     \end{aligned}
 \end{equation}
 
-\noindent Mispricing function for it is then
+\noindent Because 
+
+$$
+\frac{\partial \bar{w}}{V^{\prime}} = \frac{\partial^{2} \bar{w}}{V^{\prime 2}} = \frac{\partial^2 \bar{w}}{\partial V \partial V^{\prime}} = 0
+$$
+
+\noindent Mispricing function is then
 
 $$
 \begin{aligned}

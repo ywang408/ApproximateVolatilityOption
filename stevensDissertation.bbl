@@ -55,6 +55,13 @@ Kristensen, D. and A.~Mele (2011, November).
   approximating derivative prices in continuous-time models.
 \newblock {\em Journal of Financial Economics\/}~{\em 102\/}(2), 390--415.
 
+\bibitem[\protect\citeauthoryear{Larguinho, Dias, and Braumann}{Larguinho
+  et~al.}{2013}]{larguinho_computation_2013}
+Larguinho, M., J.~C. Dias, and C.~A. Braumann (2013, June).
+\newblock On the computation of option prices and {Greeks} under the {CEV}
+  model.
+\newblock {\em Quantitative Finance\/}~{\em 13\/}(6), 907--917.
+
 \bibitem[\protect\citeauthoryear{Whaley}{Whaley}{1993}]{whaley_derivatives_1993}
 Whaley, R.~E. (1993, August).
 \newblock Derivatives on {Market} {Volatility}: {Hedging} {Tools} {Long}
