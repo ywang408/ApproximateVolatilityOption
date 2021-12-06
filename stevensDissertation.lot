@@ -4,10 +4,21 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces heston cev rho=0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv\relax }}{2}{table.caption.13}%
-\contentsline {table}{\numberline {A.2}{\ignorespaces heston cev rho=0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv\relax }}{2}{table.caption.14}%
-\contentsline {table}{\numberline {A.3}{\ignorespaces heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv\relax }}{3}{table.caption.15}%
-\contentsline {table}{\numberline {A.4}{\ignorespaces heston cev rho=0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv\relax }}{3}{table.caption.16}%
-\contentsline {table}{\numberline {A.5}{\ignorespaces heston cev rho=-0.5,T=0.5,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv\relax }}{4}{table.caption.17}%
-\contentsline {table}{\numberline {A.6}{\ignorespaces heston cev rho=-0.5,T=0.3,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv\relax }}{4}{table.caption.18}%
-\contentsline {table}{\numberline {A.7}{\ignorespaces heston cev rho=-0.5,T=0.1,K=0.15, kappa=4,kappa2 =2,theta=0.2, sigma1=0.3,sigam2=0.8, gamma=1.6.csv\relax }}{5}{table.caption.19}%
+\contentsline {table}{\numberline {A.1}{\ignorespaces Mean-reverting CEV Results 1\relax }}{1}{table.caption.13}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Mean-reverting CEV Results 2\relax }}{2}{table.caption.14}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces Mean-reverting CEV Results 3\relax }}{2}{table.caption.15}%
+\contentsline {table}{\numberline {A.4}{\ignorespaces Mean-reverting CEV Results 4\relax }}{3}{table.caption.16}%
+\contentsline {table}{\numberline {A.5}{\ignorespaces Mean-reverting CEV Results 5\relax }}{3}{table.caption.17}%
+\contentsline {table}{\numberline {A.6}{\ignorespaces Mean-reverting CEV Results 6\relax }}{4}{table.caption.18}%
+\contentsline {table}{\numberline {A.7}{\ignorespaces Mean-reverting CEV Results 7\relax }}{4}{table.caption.19}%
+\contentsline {table}{\numberline {A.8}{\ignorespaces Mean-reverting CEV Results 8\relax }}{5}{table.caption.20}%
+\contentsline {table}{\numberline {A.9}{\ignorespaces Mean-reverting CEV Results 9\relax }}{5}{table.caption.21}%
+\contentsline {table}{\numberline {A.10}{\ignorespaces Mean-reverting CEV Results 1 with another nuisance parameter\relax }}{6}{table.caption.22}%
+\contentsline {table}{\numberline {A.11}{\ignorespaces Mean-reverting CEV Results 2 with another nuisance parameter\relax }}{6}{table.caption.23}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {B.1}{\ignorespaces Heston plus CEV Results 1\relax }}{7}{table.caption.24}%
+\contentsline {table}{\numberline {B.2}{\ignorespaces Heston plus CEV Results 2\relax }}{8}{table.caption.25}%
+\contentsline {table}{\numberline {B.3}{\ignorespaces Heston plus CEV Results 3\relax }}{8}{table.caption.26}%
+\contentsline {table}{\numberline {B.4}{\ignorespaces Heston plus CEV Results 4\relax }}{9}{table.caption.27}%
+\contentsline {table}{\numberline {B.5}{\ignorespaces Heston plus CEV Results 5\relax }}{9}{table.caption.28}%
+\contentsline {table}{\numberline {B.6}{\ignorespaces Heston plus CEV Results 6\relax }}{10}{table.caption.29}%
