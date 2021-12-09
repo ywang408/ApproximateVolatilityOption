@@ -29,7 +29,7 @@ Let $R(t,x)$ be the instantaneous short-term interest rate also satisfying $R:[0
 
 \noindent with boundary condition $w(t,x) = h(t,x)$. It's easily seen that under risk neutral measure $\mathbb Q$, the instantaneous option price change is equal to the price gain in saving account. 
 
-Next we consider to use a $m$-dimensional($m \leq d$) process $\bar{X}(t)$ which is a simpler auxiliary model to approximate the price of option. $\bar{X}(t)$ satisfies the following SDE
+Next we consider to use a $m$-dimensional($m \leq d$) process $\bar{X}(t)$ which is a simpler auxiliary model to approximate the price of option under true model. $\bar{X}(t)$ satisfies the following SDE
 
 \begin{equation}\label{approx model}
     \begin{aligned}
@@ -43,16 +43,16 @@ Next we consider to use a $m$-dimensional($m \leq d$) process $\bar{X}(t)$ which
 Let $\bar{w}(t,x)$ be the option price written on process $\bar{X}_t$, the infinitesimal generator $\bar{L}$ for option price $\bar{w}$ is the same as equation(\ref{general inf gen}) but replacing $\mu(t,x)$, $\sigma(t,x)$ by $\bar{\mu}(t,x)$ and $\bar{\sigma}(t,x)$. Therefore $\bar{w}(t,x)$ is a solution to
 
 \begin{equation}\label{pde under approx}
-    \mathcal{\bar{L}}\bar{w}(x,t) = R(x,t)\bar{w}(x,t)
+    L \bar{w}(x,t) = R(x,t)\bar{w}(x,t)
 \end{equation}
 
 Denote the price difference $\Delta w(t,x) = w(t,x) - \bar{w}(t,x)$, then $\Delta w$ satisfies 
 
-\begin{equation}
+\begin{equation}\label{pde diff}
     L \Delta w(t, x)+ (L-\bar{L}) \bar{w}(t,x)=R(x, t) \Delta w(t, x)
 \end{equation}
 
-\noindent with boundary condition $\Delta w(t,x) = 0$. Next we define
+\noindent with boundary condition $\Delta w(t,x) = 0$. Actually this PDE is just the difference of PDE \eqref{pde under general} and \eqref{pde under approx}. Next we define
 
 \begin{equation}\label{mis-pricing}
     \begin{aligned}
@@ -61,7 +61,13 @@ Denote the price difference $\Delta w(t,x) = w(t,x) - \bar{w}(t,x)$, then $\Delt
     \end{aligned}
 \end{equation}
 
-\noindent using the Feynman-Kac representation leads to option price $w(t,x)$ taking the following form
+Such that equation \eqref{pde diff} can be written to
+
+$$
+L \Delta w(t,x) - R(t,x)\Delta w(t,x) + \delta(t,x) = 0
+$$
+
+\noindent using the Feynman-Kac representation on $\Delta w(t,x)$ leads to the following representation
 
 \begin{equation}\label{feynman-kac rep}
         w(t, x)=\bar{w}(t,x)+\int_{t}^{T} \mathbb{E}^{t,x}\left[\exp \left(-\int_{t}^{s} R(u, X_u) d u\right) \delta(s,X_s)\right] d s
@@ -107,7 +113,7 @@ Assume closed form solution of auxiliary model $\bar{w}$ under auxiliary model i
     w(t, x)=\bar{w}(t,x)+\int_{t}^{T} \mathbb{E}^{t,x}\left[\exp \left(-\int_{t}^{s} R(u, X_u) d u\right) \delta(s,X_s)\right] d s
 \end{equation}
 
-\noindent Then KM proposes Definition 1(Asset Price Approximation) in his paper, it's given by
+\noindent Then KM proposes Definition 1 (Asset Price Approximation) in his paper, it's given by
 
 \begin{equation}\label{approx formula}
     w_{N}(t, x)=\bar{w}(t,x)+\sum_{n=0}^{N} \frac{(T-t)^{n+1}}{(n+1) !} \delta_{n}(t, x)
