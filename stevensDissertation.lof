@@ -30,27 +30,20 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error with $\tau =0.5, \sigma =0.15, \gamma =0.15$}}}{28}{subfigure.3.2}%
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {price comparison with $\tau =0.5, \sigma =0.6, \gamma =0.75$}}}{28}{subfigure.3.3}%
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {relative error with $\tau =0.5,\sigma =0.6, \gamma =0.75$}}}{28}{subfigure.3.4}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces mean-reverting CEV model result 3\relax }}{29}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Heston plus CEV model result 1\relax }}{29}{figure.caption.10}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison with $\tau =0.1$}}}{29}{subfigure.4.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error with $\tau =0.1$}}}{29}{subfigure.4.2}%
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {price comparison with $\tau =0.3$}}}{29}{subfigure.4.3}%
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {relative error with $\tau =0.3$}}}{29}{subfigure.4.4}%
 \contentsline {subfigure}{\numberline {(e)}{\ignorespaces {price comparison with $\tau =0.5$}}}{29}{subfigure.4.5}%
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {relative error with $\tau =0.5$}}}{29}{subfigure.4.6}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Heston plus CEV model result 1\relax }}{30}{figure.caption.11}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Heston plus CEV model result 2\relax }}{30}{figure.caption.11}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison with $\tau =0.1$}}}{30}{subfigure.5.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error with $\tau =0.1$}}}{30}{subfigure.5.2}%
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {price comparison with $\tau =0.3$}}}{30}{subfigure.5.3}%
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {relative error with $\tau =0.3$}}}{30}{subfigure.5.4}%
 \contentsline {subfigure}{\numberline {(e)}{\ignorespaces {price comparison with $\tau =0.5$}}}{30}{subfigure.5.5}%
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {relative error with $\tau =0.5$}}}{30}{subfigure.5.6}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Heston plus CEV model result 2\relax }}{31}{figure.caption.12}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {price comparison with $\tau =0.1$}}}{31}{subfigure.6.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {relative error with $\tau =0.1$}}}{31}{subfigure.6.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {price comparison with $\tau =0.3$}}}{31}{subfigure.6.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {relative error with $\tau =0.3$}}}{31}{subfigure.6.4}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {price comparison with $\tau =0.5$}}}{31}{subfigure.6.5}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {relative error with $\tau =0.5$}}}{31}{subfigure.6.6}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

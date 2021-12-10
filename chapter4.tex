@@ -70,24 +70,6 @@ Besides, we notice that for results with $\tau=0.5$, our results sometimes seem 
   \label{mrcev res t}
 \end{figure}
 
-Additionally, using our method to price options with very small value can also be challenging. The loss of accuracy for approximating non-central chi-square distribution functions would be magnified under this condition. In figure \ref{mrcev res3}, our parameters for mean-reverting CEV model are $\kappa=6, m=0.06, \sigma=1.4, \gamma=1.2$. Because we uses a small long-term mean parameter $m=0.06$, when time to maturity increases, volatility value $V$ will less than $K=0.15$. In this case, volatility option price would have small value, which magnifies our other errors.
-
-\begin{figure}[t]
-  \centering
-  \subfloat[price comparison with $\tau=0.1$]{\includegraphics[width=0.5\textwidth]{./figures/T=0.1,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png}\label{price comparison7}}
-  \hfill
-  \subfloat[relative error with $\tau=0.1$]{\includegraphics[width=0.5\textwidth]{./figures/T=0.1,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png}\label{price diff7}} \\
-  \subfloat[price comparison with $\tau=0.3$]{\includegraphics[width=0.5\textwidth]{./figures/T=0.3,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png}\label{price comparison8}}
-  \hfill
-  \subfloat[relative error with $\tau=0.3$]{\includegraphics[width=0.5\textwidth]{./figures/T=0.3,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png}\label{price diff8}} \\
-  \subfloat[price comparison with $\tau=0.5$]{\includegraphics[width=0.5\textwidth]{./figures/T=0.5,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 price.png}\label{price comparison9}}
-  \hfill
-  \subfloat[relative error with $\tau=0.5$]{\includegraphics[width=0.5\textwidth]{./figures/T=0.5,K=0.15, kappa=6,m=0.06, sigma=1.4, gamma=1.2 error.png}\label{price diff9}}
-  \caption{mean-reverting CEV model result 3}
-  \small{Parameters are $K=0.15, \kappa=6, m=0.06, \sigma=1.4, \gamma=1.2$}
-  \label{mrcev res3}
-\end{figure}
-
 \section{Volatility option prices under Heston plus CEV model}
 
 For Heston plus CEV model,
