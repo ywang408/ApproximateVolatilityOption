@@ -24,7 +24,7 @@ Let $w(t,x)$ be the valuation function satisfying $w: [0,T] \times \Gamma$, payo
 Let $R(t,x)$ be the instantaneous short-term interest rate also satisfying $R:[0,T] \times B \rightarrow \mathbb R$, combining with equation \eqref{general model} and equation \eqref{general inf gen}, the task is to find an approximation to the solution to the following partial differential equation (PDE)
 
 \begin{equation}\label{pde under general}
-    Lw(x,t) = R(x,t)w(x,t)
+    Lw(t,x) = R(t,x)w(t,x)
 \end{equation}
 
 \noindent with boundary condition $w(t,x) = h(t,x)$. It's easily seen that under risk neutral measure $\mathbb Q$, the instantaneous option price change is equal to the price gain in saving account. 
@@ -43,13 +43,13 @@ Next we consider to use a $m$-dimensional($m \leq d$) process $\bar{X}(t)$ which
 Let $\bar{w}(t,x)$ be the option price written on process $\bar{X}_t$, the infinitesimal generator $\bar{L}$ for option price $\bar{w}$ is the same as equation(\ref{general inf gen}) but replacing $\mu(t,x)$, $\sigma(t,x)$ by $\bar{\mu}(t,x)$ and $\bar{\sigma}(t,x)$. Therefore $\bar{w}(t,x)$ is a solution to
 
 \begin{equation}\label{pde under approx}
-    L \bar{w}(x,t) = R(x,t)\bar{w}(x,t)
+    L \bar{w}(t,x) = R(t,x)\bar{w}(t,x)
 \end{equation}
 
 Denote the price difference $\Delta w(t,x) = w(t,x) - \bar{w}(t,x)$, then $\Delta w$ satisfies 
 
 \begin{equation}\label{pde diff}
-    L \Delta w(t, x)+ (L-\bar{L}) \bar{w}(t,x)=R(x, t) \Delta w(t, x)
+    L \Delta w(t, x)+ (L-\bar{L}) \bar{w}(t,x)=R(t,x) \Delta w(t, x)
 \end{equation}
 
 \noindent with boundary condition $\Delta w(t,x) = 0$. Actually this PDE is just the difference of PDE \eqref{pde under general} and \eqref{pde under approx}. Next we define
@@ -57,7 +57,7 @@ Denote the price difference $\Delta w(t,x) = w(t,x) - \bar{w}(t,x)$, then $\Delt
 \begin{equation}\label{mis-pricing}
     \begin{aligned}
         \delta(t,x) &= (L-\bar{L}) \bar{w}(t,x) \\
-        &=\sum_{i=1}^{d} \Delta \mu_{i}(t,x) \frac{\partial \bar{w}(t,x)}{\partial x_{i}}+\frac{1}{2} \sum_{i, j=1}^{d} \Delta \sigma_{i j}^{2}(x, t) \frac{\partial^{2} \bar{w}(x,t)}{\partial x_{i} \partial x_{j}}
+        &=\sum_{i=1}^{d} \Delta \mu_{i}(t,x) \frac{\partial \bar{w}(t,x)}{\partial x_{i}}+\frac{1}{2} \sum_{i, j=1}^{d} \Delta \sigma_{i j}^{2}(t,x) \frac{\partial^{2} \bar{w}(t,x)}{\partial x_{i} \partial x_{j}}
     \end{aligned}
 \end{equation}
 
@@ -139,10 +139,10 @@ $$
 \end{aligned}
 $$
 
-\noindent The mispricing function here is $\delta = \frac{1}{2}(v(t)-\sigma_0)S^2 \frac{\partial^2 w^{\text{bs}}}{\partial S^2}. $ Then the nuisance parameter is the instantaneous volatility $\sigma_0$ in Black-Shcoles model. KM proposes that when we approximate $w(x,t)$ with $w_N(x,t;\hat{\sigma_0})$, we consider
+\noindent The mispricing function here is $\delta = \frac{1}{2}(v(t)-\sigma_0)S^2 \frac{\partial^2 w^{\text{bs}}}{\partial S^2}. $ Then the nuisance parameter is the instantaneous volatility $\sigma_0$ in Black-Shcoles model. KM proposes that when we approximate $w(t,x)$ with $w_N(t,x;\hat{\sigma_0})$, we consider
 
 $$
-\hat{\sigma}_{N}(x, t)=\arg \min _{\sigma}\left(w_{N}(x, t ; \sigma)-w_{0}(x, t ; \sigma)\right)^{2}
+\hat{\sigma}_{N}(t,x)=\arg \min _{\sigma}\left(w_{N}(t,x ; \sigma)-w_{0}(t,x ; \sigma)\right)^{2}
 $$
 
-\noindent where $w_{0}(x, t ; \sigma)\equiv w^{\text{bs}}(x, t ; \sigma)$. Thus we can set instantaneous volatility to be the spot value of volatility in Heston model, or be the long-time mean of Heston model, that's is, $\sigma_0 = v(t)$ or $\sigma_0 = \theta$. In our case, the setting of nuisance parameter is specified in chapter \ref{ch4}.
+\noindent where $w_{0}(t,x ; \sigma)\equiv w^{\text{bs}}(t,x ; \sigma)$. Thus we can set instantaneous volatility to be the spot value of volatility in Heston model, or be the long-time mean of Heston model, that's is, $\sigma_0 = v(t)$ or $\sigma_0 = \theta$. In our case, the setting of nuisance parameter is specified in chapter \ref{ch4}.
